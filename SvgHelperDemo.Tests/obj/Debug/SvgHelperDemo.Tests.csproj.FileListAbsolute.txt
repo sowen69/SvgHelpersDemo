@@ -1,0 +1,8 @@
+C:\Users\Simon\Documents\My Dropbox\VS Projects\SvgHelperDemo\SvgHelperDemo.Tests\bin\Debug\SvgHelperDemo.Tests.dll.config
+C:\Users\Simon\Documents\My Dropbox\VS Projects\SvgHelperDemo\SvgHelperDemo.Tests\bin\Debug\SvgHelperDemo.Tests.dll
+C:\Users\Simon\Documents\My Dropbox\VS Projects\SvgHelperDemo\SvgHelperDemo.Tests\bin\Debug\SvgHelperDemo.Tests.pdb
+C:\Users\Simon\Documents\My Dropbox\VS Projects\SvgHelperDemo\SvgHelperDemo.Tests\bin\Debug\SvgHelperDemo.dll
+C:\Users\Simon\Documents\My Dropbox\VS Projects\SvgHelperDemo\SvgHelperDemo.Tests\bin\Debug\SvgHelperDemo.pdb
+C:\Users\Simon\Documents\My Dropbox\VS Projects\SvgHelperDemo\SvgHelperDemo.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Simon\Documents\My Dropbox\VS Projects\SvgHelperDemo\SvgHelperDemo.Tests\obj\Debug\SvgHelperDemo.Tests.dll
+C:\Users\Simon\Documents\My Dropbox\VS Projects\SvgHelperDemo\SvgHelperDemo.Tests\obj\Debug\SvgHelperDemo.Tests.pdb
