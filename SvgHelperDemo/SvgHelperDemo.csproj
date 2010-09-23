@@ -111,7 +111,7 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Paper_V5\Svg\Odd.Svg.csproj">
+    <ProjectReference Include="..\Svg\Odd.Svg.csproj">
       <Project>{4F1C16F6-F1DE-4467-8008-62C6F208EC9C}</Project>
       <Name>Odd.Svg</Name>
     </ProjectReference>

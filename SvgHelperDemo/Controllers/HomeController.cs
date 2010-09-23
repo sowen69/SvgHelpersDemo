@@ -11,7 +11,7 @@ namespace SvgHelperDemo.Controllers
     {
         public ActionResult Index()
         {
-            ViewData["Message"] = "Welcome to ASP.NET MVC!";
+            ViewData["Message"] = "MVC2 HtmlHelpers for SVG Graphics";
 
             return View();
         }

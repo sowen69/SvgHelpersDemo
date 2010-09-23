@@ -1,0 +1,5 @@
+SvgHelpers for ASP.NET MVC2
+
+Using MVC2 HtmlHelper syntax create SVG graphics in a view.
+
+<%= Html.SvgCircle().X(20).Y(20).R(10) %>

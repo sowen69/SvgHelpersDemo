@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SvgHelperDemo", "SvgHelperD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SvgHelperDemo.Tests", "SvgHelperDemo.Tests\SvgHelperDemo.Tests.csproj", "{55A91068-EAC5-49A8-9B6C-3E54CA527546}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odd.Svg", "..\Paper_V5\Svg\Odd.Svg.csproj", "{4F1C16F6-F1DE-4467-8008-62C6F208EC9C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odd.Svg", "Svg\Odd.Svg.csproj", "{4F1C16F6-F1DE-4467-8008-62C6F208EC9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
