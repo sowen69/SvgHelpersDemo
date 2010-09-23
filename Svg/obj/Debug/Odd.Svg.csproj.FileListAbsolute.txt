@@ -13,3 +13,5 @@ C:\Users\Simon\Documents\My Dropbox\VS Projects\SvgHelperDemo\Paper\bin\Odd.Svg.
 C:\Users\Simon\Documents\My Dropbox\VS Projects\SvgHelperDemo\Svg\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Simon\Documents\My Dropbox\VS Projects\SvgHelperDemo\Svg\obj\Debug\Odd.Svg.dll
 C:\Users\Simon\Documents\My Dropbox\VS Projects\SvgHelperDemo\Svg\obj\Debug\Odd.Svg.pdb
+C:\Users\Simon\Documents\My Dropbox\VS Projects\SvgHelperDemo\Svg\Odd.Svg.dll
+C:\Users\Simon\Documents\My Dropbox\VS Projects\SvgHelperDemo\Svg\Odd.Svg.pdb

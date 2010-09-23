@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Web.Mvc;
+using System.IO.Compression;
 
 namespace Odd.Svg.SvgHelpers
 {
