@@ -15,10 +15,7 @@ namespace Odd.Svg.SvgHelpers
         internal string _xmlBase;
         internal string _xmlLang;
         internal string _xmlSpace;
-
-
-
-
+        
         internal string _otherAttributeName;
         internal string _otherAttributeValue;
 

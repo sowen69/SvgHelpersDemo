@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Web.Mvc;
 
 namespace Odd.Svg.SvgHelpers
@@ -70,7 +68,6 @@ namespace Odd.Svg.SvgHelpers
             return this;
         }
 
-        
         public SvgText X(double x)
         {
             this._x = x;
@@ -78,47 +75,41 @@ namespace Odd.Svg.SvgHelpers
             _attributeStack.Add(@"x=""" + _x + @"""");
             return this;
         }
-        
         public SvgText Y(double y)
         {
             this._y = y;
             if (this == null) throw new Exception("Method SvgText.Y resulted in a null value.");
             _attributeStack.Add(@"y=""" + _y + @"""");
             return this;
-        }
-        
+        }        
         public SvgText DX(double dx)
         {
             this._dx = dx;
             if (this == null) throw new Exception("Method SvgText.DX resulted in a null value.");
             _attributeStack.Add(@"dx=""" + _dx + @"""");
             return this;
-        }
-        
+        }        
         public SvgText DY(double dy)
         {
             this._dy = dy;
             if (this == null) throw new Exception("Method SvgText.DY resulted in a null value.");
             _attributeStack.Add(@"dy=""" + _dy + @"""");
             return this;
-        }
-        
+        }       
         public SvgText Rotate(double rotate)
         {
             this._rotate = rotate;
             if (this == null) throw new Exception("Method SvgText.Rotate resulted in a null value.");
             _attributeStack.Add(@"rotate=""" + _rotate + @"""");
             return this;
-        }
-        
+        }        
         public SvgText TextLength(string textLength)
         {
             this._textLength = textLength;
             if (this == null) throw new Exception("Method SvgText.TextLength resulted in a null value.");
             _attributeStack.Add(@"textLength=""" + _textLength + @"""");
             return this;
-        }
-        
+        }        
         public SvgText LengthAdjust(string lengthAdjust)
         {
             this._lengthAdjust = lengthAdjust;

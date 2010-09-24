@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Web.Mvc;
 
 namespace Odd.Svg.SvgHelpers
@@ -79,6 +77,13 @@ namespace Odd.Svg.SvgHelpers
             this._xlink_type = xlink_type;
             if (this == null) throw new Exception("Method SvgTRef.XlinkType resulted in a null value.");
             _attributeStack.Add(@"xlink:type=""" + _xlink_type + @"""");
+            return this;
+        }
+        public SvgTRef XlinkRole(string xlink_role)
+        {
+            this._xlink_role = xlink_role;
+            if (this == null) throw new Exception("Method SvgTRef.XlinkRole resulted in a null value.");
+            _attributeStack.Add(@"xlink:role=""" + _xlink_type + @"""");
             return this;
         }
         public SvgTRef XlinkArcrole(string xlink_arcrole)

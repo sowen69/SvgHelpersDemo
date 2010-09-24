@@ -145,6 +145,14 @@ namespace Odd.Svg.SvgHelpers
             _attributeStack.Add(@"onzoom=""" + onzoom + @"""");
             return this;
         }
+        public SvgEvent AddAttribute(string name, string value)
+        {
+            this._otherAttributeName = name;
+            this._otherAttributeValue = value;
+            if (this == null) throw new Exception("Method SvgEvent.AddAttribute resulted in a null value.");
+            _attributeStack.Add(name + @"=""" + value + @"""");
+            return this;
+        }
 
         public override string ToString()
         {

@@ -48,8 +48,16 @@
     <%= Html.EndSvg() %>
     
     <h3>Ellipse</h3>
+    <p>Using CSS styling:
+    <pre>
+    &#60;%= Html.SvgEllipse().CX(200).CY(50).RX(100).RY(50).Style(new SvgStyle().Stroke("grey").StrokeWidth("5px").Fill("blue")) %>    
+    </pre>
+        Which produces the following SVG code:
+    <pre>
+    &#60;ellipse cx="200" cy="50" rx="100" ry="50" style="stroke:grey; stroke-width:5px; fill:blue;"/>
+    </pre></p>
     <%= Html.BeginSvg().xlink().X(0).Y(0).Width(960).Height(100) %>
-        <%= Html.SvgEllipse().CX(200).CY(50).RX(100).RY(50).Style(new SvgStyle().Stroke("grey").StrokeWidth("1px").Fill("white")) %>
+        <%= Html.SvgEllipse().CX(200).CY(50).RX(100).RY(50).Style(new SvgStyle().Stroke("grey").StrokeWidth("5px").Fill("blue")) %>
     <%= Html.EndSvg() %>
     
         

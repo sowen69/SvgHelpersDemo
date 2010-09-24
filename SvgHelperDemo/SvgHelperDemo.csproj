@@ -76,7 +76,10 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Views\Home\BasicShapes.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Views\Home\Gradients.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

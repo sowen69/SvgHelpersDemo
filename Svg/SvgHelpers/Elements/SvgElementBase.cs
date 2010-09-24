@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Web.Mvc;
-using Odd.Svg.SvgHelpers;
 
 namespace Odd.Svg.SvgHelpers
 {
@@ -26,10 +23,10 @@ namespace Odd.Svg.SvgHelpers
         internal double _x;
         internal double _y;
 
-        internal double _x1 = 0;
-        internal double _y1 = 0;
-        internal double _x2 = 0;
-        internal double _y2 = 0;
+        internal double _x1;
+        internal double _y1;
+        internal double _x2;
+        internal double _y2;
 
         internal double _height;
         internal double _width;
@@ -69,6 +66,14 @@ namespace Odd.Svg.SvgHelpers
         internal string _method;
         internal string _spacing;
 
+        // Gradient
+        internal string _gradientUnits;
+        internal string _gradientTransform;
+        internal string _spreadMethod;
+        internal double _fx;
+        internal double _fy;
+        internal string _offset;
+
         // Other
         internal string _textLength;
         internal string _lengthAdjust;
@@ -86,7 +91,7 @@ namespace Odd.Svg.SvgHelpers
         // to making the element self closing
         internal bool _hasChildNode = false;
 
-        // Transforms, events and presentation attributes split into their own classes
+        // Transforms, events and presentation/style attributes split into their own classes
         // to keep the intellisence as clean as possible with so many option to choose from.
         internal IList<SvgTransform> _transforms;
         internal IList<SvgEvent> _events;
@@ -95,11 +100,6 @@ namespace Odd.Svg.SvgHelpers
 
         internal IList<string> _attributeStack;
         #endregion
-
-        /// <summary>The Id of the element that can be used by Xlink and CSS</summary>
-        ///
-        /// <returns>blah</returns>
-
 
         // Get Out of Jail Free Card: 
         // If i've missed an attribute that should be in here
@@ -135,32 +135,49 @@ namespace Odd.Svg.SvgHelpers
                 tag.Append(_xlinkDec);
                 tag.Append(" ");
             }
-
-            foreach (var attrib in _attributeStack)
+            if (_attributeStack != null)
             {
-                tag.Append(attrib);
-                tag.Append(" ");
-            }
-            foreach (var style in _styles)
-            {
-                tag.Append(style);
-                tag.Append(" ");
-            }
-            foreach (var transform in _transforms)
-            {
-                tag.Append(transform.ToString());
-                tag.Append(" ");
+                foreach (var attrib in _attributeStack)
+                {
+                    tag.Append(attrib);
+                    tag.Append(" ");
+                }
             }
 
-            foreach (var presentation in _presentations)
+            if (_styles != null)
             {
-                tag.Append(presentation.ToString());
-                tag.Append(" ");
+                foreach (var style in _styles)
+                {
+                    tag.Append(style);
+                    tag.Append(" ");
+                }
             }
-            foreach (var ev in _events)
+
+            if (_transforms != null)
             {
-                tag.Append(ev.ToString());
-                tag.Append(" ");
+                foreach (var transform in _transforms)
+                {
+                    tag.Append(transform.ToString());
+                    tag.Append(" ");
+                }
+            }
+
+            if (_presentations != null)
+            {
+                foreach (var presentation in _presentations)
+                {
+                    tag.Append(presentation.ToString());
+                    tag.Append(" ");
+                }
+            }
+
+            if (_events != null)
+            {
+                foreach (var ev in _events)
+                {
+                    tag.Append(ev.ToString());
+                    tag.Append(" ");
+                }
             }
 
             int index = tag.Length;

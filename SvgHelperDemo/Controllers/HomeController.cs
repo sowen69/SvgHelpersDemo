@@ -25,5 +25,10 @@ namespace SvgHelperDemo.Controllers
         {
             return View();
         }
+        public ActionResult Gradients()
+        {
+            return View();
+        }
+
     }
 }

@@ -23,7 +23,6 @@ namespace Odd.Svg.SvgHelpers
         IList<string> _attributeStack;
 
         string _innerText;
-        private bool _hasChildNode;
 
         public SvgDesc()
         {

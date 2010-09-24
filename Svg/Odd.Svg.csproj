@@ -47,6 +47,13 @@
     <Compile Include="SvgHelpers\Elements\Descriptive\SvgDesc.cs" />
     <Compile Include="SvgHelpers\Elements\Descriptive\SvgMetadata.cs" />
     <Compile Include="SvgHelpers\Elements\Descriptive\SvgTitle.cs" />
+    <Compile Include="SvgHelpers\Elements\Gradient\SvgGradientStop.cs" />
+    <Compile Include="SvgHelpers\Elements\Gradient\SvgLinearGradient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SvgHelpers\Elements\Gradient\SvgRadialGradient.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SvgHelpers\Elements\Shapes\SvgCircle.cs" />
     <Compile Include="SvgHelpers\Elements\Shapes\SvgEllipse.cs" />
     <Compile Include="SvgHelpers\Elements\Shapes\SvgLine.cs" />
@@ -54,7 +61,9 @@
     <Compile Include="SvgHelpers\Elements\Shapes\SvgPath.cs" />
     <Compile Include="SvgHelpers\Elements\Shapes\SvgPolygon.cs" />
     <Compile Include="SvgHelpers\Elements\Shapes\SvgPolyline.cs" />
-    <Compile Include="SvgHelpers\Elements\Shapes\SvgRect.cs" />
+    <Compile Include="SvgHelpers\Elements\Shapes\SvgRect.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SvgHelpers\Elements\Structural\SvgDefs.cs" />
     <Compile Include="SvgHelpers\AttributeCollections\SvgStyle.cs" />
     <Compile Include="SvgHelpers\Elements\Structural\SvgElement.cs">
@@ -65,7 +74,6 @@
     </Compile>
     <Compile Include="SvgHelpers\Elements\Structural\SvgSymbol.cs" />
     <Compile Include="SvgHelpers\Elements\Structural\SvgUse.cs" />
-    <Compile Include="SvgHelpers\Elements\SvgAnimationBase.cs" />
     <Compile Include="SvgHelpers\Elements\SvgElementBase.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -83,14 +91,14 @@
     <Compile Include="SvgHelpers\SvgHelpers.cs" />
     <Compile Include="SvgHelpers\AttributeCollections\SvgTransform.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="SvgHelpers\Elements\Animation\" />
-    <Folder Include="SvgHelpers\Elements\Gradient\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="method.snippet">
       <SubType>Designer</SubType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SvgHelpers\Elements\Animation\Animations Not Implimented.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

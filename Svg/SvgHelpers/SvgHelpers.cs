@@ -56,7 +56,7 @@ namespace Odd.Svg.SvgHelpers
         public static SvgDesc SvgDesc(this HtmlHelper helper)
         { return new SvgDesc(); }
     }
-    public static class SvgMetadataHelper
+    public static class SvgSvgMetadata
     {
         public static BeginSvgMetadata BeginSvgMetadata(this HtmlHelper helper)
         { return new BeginSvgMetadata(); }
@@ -160,5 +160,31 @@ namespace Odd.Svg.SvgHelpers
 
         public static EndSvgTextPath EndSvgTextPath(this HtmlHelper helper)
         { return new EndSvgTextPath(); }
+    }
+
+    // Gradient
+    public static class SvgLinearGradientHelper
+    {
+        public static SvgLinearGradient SvgLinearGradient(this HtmlHelper helper)
+        { return new SvgLinearGradient(); }
+
+        public static EndSvgLinearGradient EndSvgLinearGradient(this HtmlHelper helper)
+        { return new EndSvgLinearGradient(); }
+    }
+    public static class SvgRadialGradientHelper
+    {
+        public static SvgRadialGradient SvgRadialGradient(this HtmlHelper helper)
+        { return new SvgRadialGradient(); }
+
+        public static EndSvgRadialGradient EndSvgRadialGradient(this HtmlHelper helper)
+        { return new EndSvgRadialGradient(); }
+    }
+    public static class SvgGradientStopHelper
+    {
+        public static SvgGradientStop SvgGradientStop(this HtmlHelper helper)
+        { return new SvgGradientStop(); }
+
+        public static EndSvgGradientStop EndSvgGradientStop(this HtmlHelper helper)
+        { return new EndSvgGradientStop(); }
     }
 }
