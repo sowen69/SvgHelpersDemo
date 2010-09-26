@@ -29,6 +29,10 @@ namespace SvgHelperDemo.Controllers
         {
             return View();
         }
+        public ActionResult OtherStuff()
+        {
+            return View();
+        }
 
     }
 }
