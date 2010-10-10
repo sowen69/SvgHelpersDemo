@@ -16,50 +16,43 @@ namespace Odd.Svg.SvgHelpers
             _transforms = new List<SvgTransform>();
             _presentations = new List<SvgPresentation>();
             _styles = new List<SvgStyle>();
-            //_events = new List<SvgEvent>();
         }
 
         public SvgRadialGradient Id(string id)
         {
-            base._id = id;
             if (this == null) throw new Exception("Method SvgRadialGradient.Id resulted in a null value.");
-            _attributeStack.Add(@"id=""" + _id + @"""");
+            _attributeStack.Add(@"id=""" + id + @"""");
             return this;
         }
         public SvgRadialGradient XmlBase(string xmlBase)
         {
-            this._xmlBase = xmlBase;
             if (this == null) throw new Exception("Method SvgRadialGradient.XmlBase resulted in a null value.");
-            _attributeStack.Add(@"xml:base=""" + _xmlBase + @"""");
+            _attributeStack.Add(@"xml:base=""" + xmlBase + @"""");
             return this;
         }
         public SvgRadialGradient XmlLang(string xmlLang)
         {
-            this._xmlLang = xmlLang;
             if (this == null) throw new Exception("Method SvgRadialGradient.XmlLang resulted in a null value.");
-            _attributeStack.Add(@"xml:lang=""" + _xmlLang + @"""");
+            _attributeStack.Add(@"xml:lang=""" + xmlLang + @"""");
             return this;
         }
         public SvgRadialGradient XmlSpace(string xmlSpace)
         {
-            this._xmlSpace = xmlSpace;
             if (this == null) throw new Exception("Method SvgRadialGradient.XmlSpace resulted in a null value.");
-            _attributeStack.Add(@"xml:space=""" + _xmlSpace + @"""");
+            _attributeStack.Add(@"xml:space=""" + xmlSpace + @"""");
             return this;
         }
 
         public SvgRadialGradient CssClass(string cssClass)
         {
-            this._cssClass = cssClass;
             if (this == null) throw new Exception("Method SvgRadialGradient.CssClass resulted in a null value.");
-            _attributeStack.Add(@"class=""" + _cssClass + @"""");
+            _attributeStack.Add(@"class=""" + cssClass + @"""");
             return this;
         }
         public SvgRadialGradient Style(string style)
         {
-            this._style = style;
             if (this == null) throw new Exception("Method SvgRadialGradient.Style resulted in a null value.");
-            _attributeStack.Add(@"style=""" + _style + @"""");
+            _attributeStack.Add(@"style=""" + style + @"""");
             return this;
         }
         public SvgRadialGradient Style(SvgStyle style)
@@ -71,67 +64,89 @@ namespace Odd.Svg.SvgHelpers
     
         public SvgRadialGradient CX(double cx)
         {
-            this._cx = cx;
             if (this == null) throw new Exception("Method SvgRadialGradient.CX resulted in a null value.");
-            _attributeStack.Add(@"cx=""" + _cx.ToString() + @"""");
+            _attributeStack.Add(@"cx=""" + cx.ToString() + @"""");
             return this;
         }
         public SvgRadialGradient CY(double cy)
         {
-            this._cy = cy;
             if (this == null) throw new Exception("Method SvgRadialGradient.CY resulted in a null value.");
-            _attributeStack.Add(@"cy=""" + _cy.ToString() + @"""");
+            _attributeStack.Add(@"cy=""" + cy.ToString() + @"""");
             return this;
         }
         public SvgRadialGradient FX(double fx)
         {
-            this._fx = fx;
             if (this == null) throw new Exception("Method SvgRadialGradient.FX resulted in a null value.");
-            _attributeStack.Add(@"fx=""" + _fx.ToString() + @"""");
+            _attributeStack.Add(@"fx=""" + fx.ToString() + @"""");
             return this;
         }     
         public SvgRadialGradient FY(double fy)
         {
-            this._fy = fy;
             if (this == null) throw new Exception("Method SvgRadialGradient.fy resulted in a null value.");
-            _attributeStack.Add(@"fy=""" + _fy.ToString() + @"""");
+            _attributeStack.Add(@"fy=""" + fy.ToString() + @"""");
             return this;
         }
         public SvgRadialGradient R(double r)
         {
-            this._r = r;
             if (this == null) throw new Exception("Method SvgRadialGradient.R resulted in a null value.");
-            _attributeStack.Add(@"r=""" + _r.ToString() + @"""");
+            _attributeStack.Add(@"r=""" + r.ToString() + @"""");
+            return this;
+        }
+
+        public SvgRadialGradient CX(string cx)
+        {
+            if (this == null) throw new Exception("Method SvgRadialGradient.CX resulted in a null value.");
+            _attributeStack.Add(@"cx=""" + cx + @"""");
+            return this;
+        }
+        public SvgRadialGradient CY(string cy)
+        {
+            if (this == null) throw new Exception("Method SvgRadialGradient.CY resulted in a null value.");
+            _attributeStack.Add(@"cy=""" + cy + @"""");
+            return this;
+        }
+        public SvgRadialGradient FX(string fx)
+        {
+            if (this == null) throw new Exception("Method SvgRadialGradient.FX resulted in a null value.");
+            _attributeStack.Add(@"fx=""" + fx + @"""");
+            return this;
+        }
+        public SvgRadialGradient FY(string fy)
+        {
+            if (this == null) throw new Exception("Method SvgRadialGradient.fy resulted in a null value.");
+            _attributeStack.Add(@"fy=""" + fy + @"""");
+            return this;
+        }
+        public SvgRadialGradient R(string r)
+        {
+            if (this == null) throw new Exception("Method SvgRadialGradient.R resulted in a null value.");
+            _attributeStack.Add(@"r=""" + r + @"""");
             return this;
         }
 
         public SvgRadialGradient GradientUnits(string gradientUnits)
         {
-            this._gradientUnits = gradientUnits;
             if (this == null) throw new Exception("Method SvgRadialGradient.GradientUnits resulted in a null value.");
-            _attributeStack.Add(@"gradientUnits=""" + _gradientUnits + @"""");
+            _attributeStack.Add(@"gradientUnits=""" + gradientUnits + @"""");
             return this;
         }
         public SvgRadialGradient GradientTransform(string gradientTransform)
         {
-            this._gradientTransform = gradientTransform;
             if (this == null) throw new Exception("Method SvgRadialGradient.GradientTransform resulted in a null value.");
-            _attributeStack.Add(@"gradientTransform=""" + _gradientTransform + @"""");
+            _attributeStack.Add(@"gradientTransform=""" + gradientTransform + @"""");
             return this;
         }
         public SvgRadialGradient SpreadMethod(string spreadMethod)
         {
-            this._spreadMethod = spreadMethod;
             if (this == null) throw new Exception("Method SvgRadialGradient.SpreadMethod resulted in a null value.");
-            _attributeStack.Add(@"spreadMethod=""" + _spreadMethod + @"""");
+            _attributeStack.Add(@"spreadMethod=""" + spreadMethod + @"""");
             return this;
         }
 
         public SvgRadialGradient XlinkHref(string xlink_href)
         {
-            this._xlink_href = xlink_href;
             if (this == null) throw new Exception("Method SvgRadialGradient.XlinkHref resulted in a null value.");
-            _attributeStack.Add(@"xlink:href=""" + _xlink_href + @"""");
+            _attributeStack.Add(@"xlink:href=""" + xlink_href + @"""");
             return this;
         }
 

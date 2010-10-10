@@ -1,0 +1,35 @@
+/// <summary>
+/// <para>Sets the id of the SVG element. The id property is</para>
+/// <para>used for CSS styling, transform and events</para>
+/// </summary>
+/// <param name="id">"name"</param>
+/// <returns>SvgCircle</returns>
+
+/// <summary>
+/// <para>Specifies a base IRI other than the base IRI of the </para>
+/// <para>document or external entity</para>
+/// </summary>
+/// <param name="xmlBase">[iri]</param>
+/// <returns>SvgCircle</returns>
+
+/// <summary>
+/// <para>Standard XML attribute to specify the language </para>
+/// <para>(e.g., English) used in the contents and attribute</para>
+/// <para>values of particular elements.</para>
+/// </summary>
+/// <param name="XmlLang">"languageID"</param>
+/// <returns>SvgCircle</returns>
+
+/// <summary>
+/// <para>Sets the id of the SVG element. The id property is</para>
+/// <para>used for CSS styling, transform and events</para>
+/// </summary>
+/// <param name="XmlSpace">"name"</param>
+/// <returns>SvgCircle</returns>
+
+/// <summary>
+/// <para>Sets the id of the SVG element. The id property is</para>
+/// <para>used for CSS styling, transform and events</para>
+/// </summary>
+/// <param name="id">"name"</param>
+/// <returns>SvgCircle</returns>

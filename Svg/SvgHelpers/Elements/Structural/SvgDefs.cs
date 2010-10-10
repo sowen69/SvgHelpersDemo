@@ -19,45 +19,39 @@ namespace Odd.Svg.SvgHelpers
 
         public BeginSvgDefs Id(string id)
         {
-            base._id = id;
             if (this == null) throw new Exception("Method BeginSvgDefs.Id resulted in a null value.");
-            _attributeStack.Add(@"id=""" + _id + @"""");
+            _attributeStack.Add(@"id=""" + id + @"""");
             return this;
         }
         public BeginSvgDefs XmlBase(string xmlBase)
         {
-            this._xmlBase = xmlBase;
             if (this == null) throw new Exception("Method BeginSvgDefs.XmlBase resulted in a null value.");
-            _attributeStack.Add(@"xml:base=""" + _xmlBase + @"""");
+            _attributeStack.Add(@"xml:base=""" + xmlBase + @"""");
             return this;
         }
         public BeginSvgDefs XmlLang(string xmlLang)
         {
-            this._xmlLang = xmlLang;
             if (this == null) throw new Exception("Method BeginSvgDefs.XmlLang resulted in a null value.");
-            _attributeStack.Add(@"xml:lang=""" + _xmlLang + @"""");
+            _attributeStack.Add(@"xml:lang=""" + xmlLang + @"""");
             return this;
         }
         public BeginSvgDefs XmlSpace(string xmlSpace)
         {
-            this._xmlSpace = xmlSpace;
             if (this == null) throw new Exception("Method BeginSvgDefs.XmlSpace resulted in a null value.");
-            _attributeStack.Add(@"xml:space=""" + _xmlSpace + @"""");
+            _attributeStack.Add(@"xml:space=""" + xmlSpace + @"""");
             return this;
         }
 
         public BeginSvgDefs CssClass(string cssClass)
         {
-            this._cssClass = cssClass;
             if (this == null) throw new Exception("Method BeginSvgDefs.CssClass resulted in a null value.");
-            _attributeStack.Add(@"class=""" + _cssClass + @"""");
+            _attributeStack.Add(@"class=""" + cssClass + @"""");
             return this;
         }
         public BeginSvgDefs Style(string style)
         {
-            this._style = style;
             if (this == null) throw new Exception("Method BeginSvgDefs.Style resulted in a null value.");
-            _attributeStack.Add(@"style=""" + _style + @"""");
+            _attributeStack.Add(@"style=""" + style + @"""");
             return this;
         }
         public BeginSvgDefs Style(SvgStyle style)

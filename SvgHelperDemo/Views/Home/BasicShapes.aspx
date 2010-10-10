@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
 <%@ Import Namespace="Odd.Svg.SvgHelpers" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	BasicShapes
@@ -20,6 +20,7 @@
     </pre></p>
     <%= Html.BeginSvg().xlink().X(0).Y(0).Width(960).Height(100) %>
         <%= Html.SvgLine().X1(50).Y1(10).X2(550).Y2(10).Presentation(new SvgPresentation().Stroke("black").StrokeWidth("2px")) %>   
+        
     <%= Html.EndSvg() %>
     
     <h3>Rectancle 1</h3>
@@ -46,6 +47,19 @@
     <%= Html.BeginSvg().xlink().X(0).Y(0).Width(960).Height(100) %>
         <%= Html.SvgRect().X(50).Y(10).Width(500).Height(50).Style(new SvgStyle().Stroke("green").StrokeWidth("5px").Fill("pink")) %>    
     <%= Html.EndSvg() %>
+
+    <h3>Circle</h3>
+    <p>Using CSS styling:
+    <pre> 
+    &#60;%= Html.SvgEllipse().CX(200).CY(50).RX(100).RY(50).Style(new SvgStyle().Stroke("grey").StrokeWidth("5px").Fill("blue")) %>    
+    </pre>
+        Which produces the following SVG code:
+    <pre>
+    &#60;ellipse cx="200" cy="50" rx="100" ry="50" style="stroke:grey; stroke-width:5px; fill:blue;"/>
+    </pre></p>
+    <%= Html.BeginSvg().xlink().X(0).Y(0).Width(960).Height(100) %>
+        <%= Html.SvgEllipse().CX(200).CY(50).RX(100).RY(50).Style(new SvgStyle().Stroke("grey").StrokeWidth("5px").Fill("blue")) %>
+    <%= Html.EndSvg() %>
     
     <h3>Ellipse</h3>
     <p>Using CSS styling:
@@ -57,9 +71,8 @@
     &#60;ellipse cx="200" cy="50" rx="100" ry="50" style="stroke:grey; stroke-width:5px; fill:blue;"/>
     </pre></p>
     <%= Html.BeginSvg().xlink().X(0).Y(0).Width(960).Height(100) %>
+    <%= Html.SvgDesc().Id("description").Text("This is the description") %>
         <%= Html.SvgEllipse().CX(200).CY(50).RX(100).RY(50).Style(new SvgStyle().Stroke("grey").StrokeWidth("5px").Fill("blue")) %>
     <%= Html.EndSvg() %>
-    
-        
 
 </asp:Content>

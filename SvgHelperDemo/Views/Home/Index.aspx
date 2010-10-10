@@ -5,7 +5,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: ViewData["Message"] %></h2>
+    <h2><%= ViewData["Message"] %></h2>
     <p>With the arrival of the latest wave of browsers SVG can be included inline in your Html markup. 
     </p>
     <p>

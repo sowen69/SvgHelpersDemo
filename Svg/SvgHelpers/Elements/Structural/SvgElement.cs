@@ -27,45 +27,39 @@ namespace Odd.Svg.SvgHelpers
 
         public BeginSvg Id(string id)
         {
-            base._id = id;
             if (this == null) throw new Exception("Method BeginSvg.Id resulted in a null value.");
-            _attributeStack.Add(@"id=""" + _id + @"""");
+            _attributeStack.Add(@"id=""" + id + @"""");
             return this;
         }
         public BeginSvg XmlBase(string xmlBase)
         {
-            this._xmlBase = xmlBase;
             if (this == null) throw new Exception("Method BeginSvg.XmlBase resulted in a null value.");
-            _attributeStack.Add(@"xml:base=""" + _xmlBase + @"""");
+            _attributeStack.Add(@"xml:base=""" + xmlBase + @"""");
             return this;
         }
         public BeginSvg XmlLang(string xmlLang)
         {
-            this._xmlLang = xmlLang;
             if (this == null) throw new Exception("Method BeginSvg.XmlLang resulted in a null value.");
-            _attributeStack.Add(@"xml:lang=""" + _xmlLang + @"""");
+            _attributeStack.Add(@"xml:lang=""" + xmlLang + @"""");
             return this;
         }
         public BeginSvg XmlSpace(string xmlSpace)
         {
-            this._xmlSpace = xmlSpace;
             if (this == null) throw new Exception("Method BeginSvg.XmlSpace resulted in a null value.");
-            _attributeStack.Add(@"xml:space=""" + _xmlSpace + @"""");
+            _attributeStack.Add(@"xml:space=""" + xmlSpace + @"""");
             return this;
         }
 
         public BeginSvg CssClass(string cssClass)
         {
-            this._cssClass = cssClass;
             if (this == null) throw new Exception("Method BeginSvg.CssClass resulted in a null value.");
-            _attributeStack.Add(@"class=""" + _cssClass.ToString() + @"""");
+            _attributeStack.Add(@"class=""" + cssClass.ToString() + @"""");
             return this;
         }
         public BeginSvg Style(string style)
         {
-            this._style = style;
             if (this == null) throw new Exception("Method BeginSvg.Style resulted in a null value.");
-            _attributeStack.Add(@"style=""" + _style.ToString() + @"""");
+            _attributeStack.Add(@"style=""" + style.ToString() + @"""");
             return this;
         }
         public BeginSvg Style(SvgStyle style)
@@ -77,45 +71,66 @@ namespace Odd.Svg.SvgHelpers
 
         public BeginSvg X(double x)
         {
-            this._x = x;
             if (this == null) throw new Exception("Method BeginSvg.X resulted in a null value.");
-            _attributeStack.Add(@"x=""" + _x.ToString() + @"""");
+            _attributeStack.Add(@"x=""" + x.ToString() + @"""");
             return this;
         }
         public BeginSvg Y(double y)
         {
-            this._y = y;
             if (this == null) throw new Exception("Method BeginSvg.Y resulted in a null value.");
-            _attributeStack.Add(@"y=""" + _y.ToString() + @"""");
+            _attributeStack.Add(@"y=""" + y.ToString() + @"""");
             return this;
         }
         public BeginSvg Height(double height)
         {
-            this._height = height;
             if (this == null) throw new Exception("Method BeginSvg.Height resulted in a null value.");
-            _attributeStack.Add(@"height=""" + _height.ToString() + @"""");
+            _attributeStack.Add(@"height=""" + height.ToString() + @"""");
             return this;
         }
         public BeginSvg Width(double width)
         {
-            this._width = width;
             if (this == null) throw new Exception("Method BeginSvg.Width resulted in a null value.");
-            _attributeStack.Add(@"width=""" + _width.ToString() + @"""");
+            _attributeStack.Add(@"width=""" + width.ToString() + @"""");
+            return this;
+        }
+        
+        public BeginSvg X(string x)
+        {
+            if (this == null) throw new Exception("Method BeginSvg.X resulted in a null value.");
+            _attributeStack.Add(@"x=""" + x + @"""");
+            return this;
+        }
+        public BeginSvg Y(string y)
+        {
+            if (this == null) throw new Exception("Method BeginSvg.Y resulted in a null value.");
+            _attributeStack.Add(@"y=""" + y + @"""");
+            return this;
+        }
+        public BeginSvg Height(string height)
+        {
+            if (this == null) throw new Exception("Method BeginSvg.Height resulted in a null value.");
+            _attributeStack.Add(@"height=""" + height + @"""");
+            return this;
+        }
+        public BeginSvg Width(string width)
+        {
+            if (this == null) throw new Exception("Method BeginSvg.Width resulted in a null value.");
+            _attributeStack.Add(@"width=""" + width + @"""");
             return this;
         }
 
-        public BeginSvg PreserveAspectRatio(string preserveAspectRatio)
-        {
-            this._preserveAspectRatio = preserveAspectRatio;
-            if (this == null) throw new Exception("Method BeginSvg.PreserveAspectRatio resulted in a null value.");
-            return this;
-        }
-        public BeginSvg ViewBox(string viewBox)
-        {
-            this._viewBox = viewBox;
-            if (this == null) throw new Exception("Method BeginSvg.ViewBox resulted in a null value.");
-            return this;
-        }
+        //public BeginSvg PreserveAspectRatio(string preserveAspectRatio)
+        //{
+        //    this._preserveAspectRatio = preserveAspectRatio;
+        //    if (this == null) throw new Exception("Method BeginSvg.PreserveAspectRatio resulted in a null value.");
+        //    return this;
+        //}
+        //public BeginSvg ViewBox(string viewBox)
+        //{
+        //    this._viewBox = viewBox;
+        //    if (this == null) throw new Exception("Method BeginSvg.ViewBox resulted in a null value.");
+        //    return this;
+        //}
 
         public BeginSvg Presentation(SvgPresentation presentation)
         {

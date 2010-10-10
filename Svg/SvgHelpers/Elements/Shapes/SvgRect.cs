@@ -21,45 +21,39 @@ namespace Odd.Svg.SvgHelpers
 
         public SvgRect Id(string id)
         {
-            base._id = id;
             if (this == null) throw new Exception("Method SvgRect.Id resulted in a null value.");
-            _attributeStack.Add(@"id=""" + _id + @"""");
+            _attributeStack.Add(@"id=""" + id + @"""");
             return this;
         }
         public SvgRect XmlBase(string xmlBase)
         {
-            this._xmlBase = xmlBase;
             if (this == null) throw new Exception("Method SvgRect.XmlBase resulted in a null value.");
-            _attributeStack.Add(@"xml:base=""" + _xmlBase + @"""");
+            _attributeStack.Add(@"xml:base=""" + xmlBase + @"""");
             return this;
         }
         public SvgRect XmlLang(string xmlLang)
         {
-            this._xmlLang = xmlLang;
             if (this == null) throw new Exception("Method SvgRect.XmlLang resulted in a null value.");
-            _attributeStack.Add(@"xml:lang=""" + _xmlLang + @"""");
+            _attributeStack.Add(@"xml:lang=""" + xmlLang + @"""");
             return this;
         }
         public SvgRect XmlSpace(string xmlSpace)
         {
-            this._xmlSpace = xmlSpace;
             if (this == null) throw new Exception("Method SvgRect.XmlSpace resulted in a null value.");
-            _attributeStack.Add(@"xml:space=""" + _xmlSpace + @"""");
+            _attributeStack.Add(@"xml:space=""" + xmlSpace + @"""");
             return this;
         }
 
         public SvgRect CssClass(string cssClass)
         {
-            this._cssClass = cssClass;
             if (this == null) throw new Exception("Method SvgRect.CssClass resulted in a null value.");
-            _attributeStack.Add(@"class=""" + _cssClass + @"""");
+            _attributeStack.Add(@"class=""" + cssClass + @"""");
             return this;
         }
         public SvgRect Style(string style)
         {
-            this._style = style;
             if (this == null) throw new Exception("Method SvgRect.Style resulted in a null value.");
-            _attributeStack.Add(@"style=""" + _style + @"""");
+            _attributeStack.Add(@"style=""" + style + @"""");
             return this;
         }
         public SvgRect Style(SvgStyle style)
@@ -71,44 +65,75 @@ namespace Odd.Svg.SvgHelpers
     
         public SvgRect X(double x)
         {
-            this._x = x;
             if (this == null) throw new Exception("Method SvgRect.X resulted in a null value.");
-            _attributeStack.Add(@"x=""" + _x.ToString() + @"""");
+            _attributeStack.Add(@"x=""" + x.ToString() + @"""");
             return this;
         }
         public SvgRect Y(double y)
         {
-            this._y = y;
             if (this == null) throw new Exception("Method SvgRect.Y resulted in a null value.");
-            _attributeStack.Add(@"y=""" + _y.ToString() + @"""");
+            _attributeStack.Add(@"y=""" + y.ToString() + @"""");
             return this;
         }
         public SvgRect RX(double rx)
         {
-            this._rx = rx;
             if (this == null) throw new Exception("Method SvgRect.RX resulted in a null value.");
-            _attributeStack.Add(@"rx=""" + _rx.ToString() + @"""");
+            _attributeStack.Add(@"rx=""" + rx.ToString() + @"""");
             return this;
         }     
         public SvgRect RY(double ry)
         {
-            this._ry = ry;
             if (this == null) throw new Exception("Method SvgRect.RY resulted in a null value.");
-            _attributeStack.Add(@"ry=""" + _ry.ToString() + @"""");
+            _attributeStack.Add(@"ry=""" + ry.ToString() + @"""");
             return this;
         }
         public SvgRect Height(double height)
         {
-            this._height = height;
             if (this == null) throw new Exception("Method SvgRect.Height resulted in a null value.");
-            _attributeStack.Add(@"height=""" + _height.ToString() + @"""");
+            _attributeStack.Add(@"height=""" + height.ToString() + @"""");
             return this;
         }
         public SvgRect Width(double width)
         {
-            this._width = width;
             if (this == null) throw new Exception("Method SvgRect.Width resulted in a null value.");
-            _attributeStack.Add(@"width=""" + _width.ToString() + @"""");
+            _attributeStack.Add(@"width=""" + width.ToString() + @"""");
+            return this;
+        }
+
+        public SvgRect X(string x)
+        {
+            if (this == null) throw new Exception("Method SvgRect.X(string) resulted in a null value.");
+            _attributeStack.Add(@"x=""" + x + @"""");
+            return this;
+        }
+        public SvgRect Y(string y)
+        {
+            if (this == null) throw new Exception("Method SvgRect.Y(string) resulted in a null value.");
+            _attributeStack.Add(@"y=""" + y + @"""");
+            return this;
+        }
+        public SvgRect RX(string rx)
+        {
+            if (this == null) throw new Exception("Method SvgRect.RX(string) resulted in a null value.");
+            _attributeStack.Add(@"rx=""" + rx + @"""");
+            return this;
+        }
+        public SvgRect RY(string ry)
+        {
+            if (this == null) throw new Exception("Method SvgRect.RY(string) resulted in a null value.");
+            _attributeStack.Add(@"ry=""" + ry + @"""");
+            return this;
+        }
+        public SvgRect Height(string height)
+        {
+            if (this == null) throw new Exception("Method SvgRect.Height(string) resulted in a null value.");
+            _attributeStack.Add(@"height=""" + height + @"""");
+            return this;
+        }
+        public SvgRect Width(string width)
+        {
+            if (this == null) throw new Exception("Method SvgRect.Width(string) resulted in a null value.");
+            _attributeStack.Add(@"width=""" + width + @"""");
             return this;
         }
 

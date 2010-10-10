@@ -8,6 +8,9 @@ namespace Odd.Svg.SvgHelpers
 {
     public class SvgCircle : SvgElementBase
     {
+        /// <summary>
+        /// Creates an inline SVG circle http://www.w3.org/TR/SVG11/shapes.html#CircleElement
+        /// </summary>
         public SvgCircle()
         {
             _tagName = "circle";
@@ -18,76 +21,83 @@ namespace Odd.Svg.SvgHelpers
             _styles = new List<SvgStyle>();
         }
 
-
-
         public SvgCircle Id(string id)
         {
-            this._id = id;
             if (this == null) throw new Exception("Method SvgCircle.Id resulted in a null value.");
-            _attributeStack.Add(@"id=""" + _id + @"""");
+            _attributeStack.Add(@"id=""" + id + @"""");
             return this;
         }
         public SvgCircle XmlBase(string xmlBase)
         {
-            this._xmlBase = xmlBase;
             if (this == null) throw new Exception("Method SvgCircle.XmlBase resulted in a null value.");
-            _attributeStack.Add(@"xml:base=""" + _xmlBase + @"""");
+            _attributeStack.Add(@"xml:base=""" + xmlBase + @"""");
             return this;
         }
         public SvgCircle XmlLang(string xmlLang)
         {
-            this._xmlLang = xmlLang;
             if (this == null) throw new Exception("Method SvgCircle.XmlLang resulted in a null value.");
-            _attributeStack.Add(@"xml:lang=""" + _xmlLang + @"""");
+            _attributeStack.Add(@"xml:lang=""" + xmlLang + @"""");
             return this;
         }
         public SvgCircle XmlSpace(string xmlSpace)
         {
-            this._xmlSpace = xmlSpace;
             if (this == null) throw new Exception("Method SvgCircle.XmlSpace resulted in a null value.");
-            _attributeStack.Add(@"xml:space=""" + _xmlSpace + @"""");
+            _attributeStack.Add(@"xml:space=""" + xmlSpace + @"""");
             return this;
         }
 
         public SvgCircle CssClass(string cssClass)
         {
-            this._cssClass = cssClass;
             if (this == null) throw new Exception("Method SvgCircle.CssClass resulted in a null value.");
-            _attributeStack.Add(@"class=""" + _cssClass + @"""");
+            _attributeStack.Add(@"class=""" + cssClass + @"""");
             return this;
         }
         public SvgCircle Style(string style)
         {
-            this._style = style;
-            if (this == null) throw new Exception("Method SvgCircle.Style resulted in a null value.");
-            _attributeStack.Add(@"style=""" + _style + @"""");
+            if (this == null) throw new Exception("Method SvgCircle.Style(string) resulted in a null value.");
+            _attributeStack.Add(@"style=""" + style + @"""");
             return this;
         }
         public SvgCircle Style(SvgStyle style)
         {
             this._styles.Add(style);
-            if (this == null) throw new Exception("Method SvgCircle.Style resulted in a null value.");
+            if (this == null) throw new Exception("Method SvgCircle.Style(<style>) resulted in a null value.");
             return this;
         }
         public SvgCircle CX(double cx)
         {
-            this._cx = cx;
-            if (this == null) throw new Exception("Method SvgCircle.CX resulted in a null value.");
-            _attributeStack.Add(@"cx=""" + _cx.ToString() + @"""");
+            if (this == null) throw new Exception("Method SvgCircle.CX(double) resulted in a null value.");
+            _attributeStack.Add(@"cx=""" + cx.ToString() + @"""");
+            return this;
+        }
+        public SvgCircle CX(string cx)
+        {
+            if (this == null) throw new Exception("Method SvgCircle.CX(string) resulted in a null value.");
+            _attributeStack.Add(@"cx=""" + cx + @"""");
             return this;
         }
         public SvgCircle CY(double cy)
         {
-            this._cy = cy;
             if (this == null) throw new Exception("Method SvgCircle.CY resulted in a null value.");
-            _attributeStack.Add(@"cy=""" + _cy.ToString() + @"""");
+            _attributeStack.Add(@"cy=""" + cy.ToString() + @"""");
+            return this;
+        }
+        public SvgCircle CY(string cy)
+        {
+            if (this == null) throw new Exception("Method SvgCircle.CY(string) resulted in a null value.");
+            _attributeStack.Add(@"cy=""" + cy + @"""");
             return this;
         }
         public SvgCircle R(double r)
         {
-            this._r = r;
             if (this == null) throw new Exception("Method SvgCircle.R resulted in a null value.");
-            _attributeStack.Add(@"r=""" + _r.ToString() + @"""");
+            _attributeStack.Add(@"r=""" + r.ToString() + @"""");
+            return this;
+        }
+        public SvgCircle R(string r)
+        {
+            if (this == null) throw new Exception("Method SvgCircle.R(string) resulted in a null value.");
+            _attributeStack.Add(@"r=""" + r + @"""");
             return this;
         }
 

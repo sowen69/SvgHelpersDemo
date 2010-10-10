@@ -19,45 +19,39 @@ namespace Odd.Svg.SvgHelpers
         }
         public SvgPolygon Id(string id)
         {
-            base._id = id;
             if (this == null) throw new Exception("Method SvgPolygon.Id resulted in a null value.");
-            _attributeStack.Add(@"id=""" + _id + @"""");
+            _attributeStack.Add(@"id=""" + id + @"""");
             return this;
         }
         public SvgPolygon XmlBase(string xmlBase)
         {
-            this._xmlBase = xmlBase;
             if (this == null) throw new Exception("Method SvgPolygon.XmlBase resulted in a null value.");
-            _attributeStack.Add(@"xml:base=""" + _xmlBase + @"""");
+            _attributeStack.Add(@"xml:base=""" + xmlBase + @"""");
             return this;
         }
         public SvgPolygon XmlLang(string xmlLang)
         {
-            this._xmlLang = xmlLang;
             if (this == null) throw new Exception("Method SvgPolygon.XmlLang resulted in a null value.");
-            _attributeStack.Add(@"xml:lang=""" + _xmlLang + @"""");
+            _attributeStack.Add(@"xml:lang=""" + xmlLang + @"""");
             return this;
         }
         public SvgPolygon XmlSpace(string xmlSpace)
         {
-            this._xmlSpace = xmlSpace;
             if (this == null) throw new Exception("Method SvgPolygon.XmlSpace resulted in a null value.");
-            _attributeStack.Add(@"xml:space=""" + _xmlSpace + @"""");
+            _attributeStack.Add(@"xml:space=""" + xmlSpace + @"""");
             return this;
         }
 
         public SvgPolygon CssClass(string cssClass)
         {
-            this._cssClass = cssClass;
             if (this == null) throw new Exception("Method SvgPolygon.CssClass resulted in a null value.");
-            _attributeStack.Add(@"class=""" + _cssClass + @"""");
+            _attributeStack.Add(@"class=""" + cssClass + @"""");
             return this;
         }
         public SvgPolygon Style(string style)
         {
-            this._style = style;
             if (this == null) throw new Exception("Method SvgPolygon.Style resulted in a null value.");
-            _attributeStack.Add(@"style=""" + _style + @"""");
+            _attributeStack.Add(@"style=""" + style + @"""");
             return this;
         }
         public SvgPolygon Style(SvgStyle style)
@@ -69,9 +63,8 @@ namespace Odd.Svg.SvgHelpers
 
         public SvgPolygon Points(string points)
         {
-            this._points = points;
             if (this == null) throw new Exception("Method SvgPolygon.D resulted in a null value.");
-            _attributeStack.Add(@"points=""" + _points + @"""");
+            _attributeStack.Add(@"points=""" + points + @"""");
             return this;
         }
         

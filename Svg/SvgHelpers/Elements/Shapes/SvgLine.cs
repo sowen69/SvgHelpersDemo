@@ -21,74 +21,94 @@ namespace Odd.Svg.SvgHelpers
 
         public SvgLine Id(string id)
         {
-            this._id = id;
             if (this == null) throw new Exception("Method SvgLine.Id resulted in a null value.");
-            _attributeStack.Add(@"id=""" + _id + @"""");
+            _attributeStack.Add(@"id=""" + id + @"""");
             return this;
         }
         public SvgLine XmlBase(string xmlBase)
         {
-            this._xmlBase = xmlBase;
             if (this == null) throw new Exception("Method SvgLine.XmlBase resulted in a null value.");
-            _attributeStack.Add(@"xml:base=""" + _xmlBase + @"""");
+            _attributeStack.Add(@"xml:base=""" + xmlBase + @"""");
             return this;
         }
         public SvgLine XmlLang(string xmlLang)
         {
-            this._xmlLang = xmlLang;
             if (this == null) throw new Exception("Method SvgLine.XmlLang resulted in a null value.");
-            _attributeStack.Add(@"xml:lang=""" + _xmlLang + @"""");
+            _attributeStack.Add(@"xml:lang=""" + xmlLang + @"""");
             return this;
         }
         public SvgLine XmlSpace(string xmlSpace)
         {
-            this._xmlSpace = xmlSpace;
             if (this == null) throw new Exception("Method SvgLine.XmlSpace resulted in a null value.");
-            _attributeStack.Add(@"xml:space=""" + _xmlSpace + @"""");
+            _attributeStack.Add(@"xml:space=""" + xmlSpace + @"""");
             return this;
         }
 
         public SvgLine CssClass(string cssClass)
         {
-            this._cssClass = cssClass;
             if (this == null) throw new Exception("Method SvgLine.CssClass resulted in a null value.");
-            _attributeStack.Add(@"class=""" + _cssClass + @"""");
+            _attributeStack.Add(@"class=""" + cssClass + @"""");
             return this;
         }
         public SvgLine Style(string style)
         {
-            this._style = style;
             if (this == null) throw new Exception("Method SvgLine.Style resulted in a null value.");
-            _attributeStack.Add(@"style=""" + _style + @"""");
+            _attributeStack.Add(@"style=""" + style + @"""");
             return this;
         }
-        
+        public SvgLine Style(SvgStyle style)
+        {
+            this._styles.Add(style);
+            if (this == null) throw new Exception("Method SvgLine.Style resulted in a null value.");
+            return this;
+        }
         public SvgLine X1(double x1)
         {
-            this._x1 = x1;
             if (this == null) throw new Exception("Method SvgLine.X1 resulted in a null value.");
-            _attributeStack.Add(@"x1=""" + _x1.ToString() + @"""");
+            _attributeStack.Add(@"x1=""" + x1.ToString() + @"""");
             return this;
         }
         public SvgLine X2(double x2)
         {
-            this._x2 = x2;
             if (this == null) throw new Exception("Method SvgLine.X2 resulted in a null value.");
-            _attributeStack.Add(@"x2=""" + _x2.ToString() + @"""");
+            _attributeStack.Add(@"x2=""" + x2.ToString() + @"""");
             return this;
         }
         public SvgLine Y1(double y1)
         {
-            this._y1 = y1;
             if (this == null) throw new Exception("Method SvgLine.Y1 resulted in a null value.");
-            _attributeStack.Add(@"y1=""" + _y1.ToString() + @"""");
+            _attributeStack.Add(@"y1=""" + y1.ToString() + @"""");
             return this;
         }
         public SvgLine Y2(double y2)
         {
-            this._y2 = y2;
             if (this == null) throw new Exception("Method SvgLine.Y2 resulted in a null value.");
-            _attributeStack.Add(@"y2=""" + _y2.ToString() + @"""");
+            _attributeStack.Add(@"y2=""" + y2.ToString() + @"""");
+            return this;
+        }
+        
+        public SvgLine X1(string x1)
+        {
+            if (this == null) throw new Exception("Method SvgLine.X1(string) resulted in a null value.");
+            _attributeStack.Add(@"x1=""" + x1 + @"""");
+            return this;
+        }
+        public SvgLine X2(string x2)
+        {
+            if (this == null) throw new Exception("Method SvgLine.X2(string) resulted in a null value.");
+            _attributeStack.Add(@"x2=""" + x2 + @"""");
+            return this;
+        }
+        public SvgLine Y1(string y1)
+        {
+            if (this == null) throw new Exception("Method SvgLine.Y1(string) resulted in a null value.");
+            _attributeStack.Add(@"y1=""" + y1 + @"""");
+            return this;
+        }
+        public SvgLine Y2(string y2)
+        {
+            if (this == null) throw new Exception("Method SvgLine.Y2(string) resulted in a null value.");
+            _attributeStack.Add(@"y2=""" + y2 + @"""");
             return this;
         }
 

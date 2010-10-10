@@ -23,6 +23,23 @@ namespace Odd.Svg.SvgHelpers
         double _xSkewAngle ;
         double _ySkewAngle ;
 
+
+        string _xScaleFactor_s;
+        string _yScaleFactor_s;
+        
+        string _xTranslate_s;
+        string _yTranslate_s;
+        
+        string _xShearFactor_s;
+        string _yShearFactor_s;
+        
+        string _angle_s;
+        string _xCenter_s;
+        string _yCenter_s;
+        
+        string _xSkewAngle_s;
+        string _ySkewAngle_s;
+
         double[] _matrix ;
 
         IList<string> _attributeStack;
@@ -34,11 +51,6 @@ namespace Odd.Svg.SvgHelpers
             _matrix = new double[6];
         }
 
-        /// <summary>
-        /// Scales the element/group in proportion
-        /// </summary>
-        /// <param name="x"></param>
-        /// <returns></returns>
         public SvgTransform Scale(double x)
         {
             this._xScaleFactor = x;
@@ -46,12 +58,6 @@ namespace Odd.Svg.SvgHelpers
             _attributeStack.Add(@"scale(" + _xScaleFactor.ToString() + ")");
             return this;
         }
-        /// <summary>
-        /// Scales the element/group by the relevant factors
-        /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
-        /// <returns></returns>
         public SvgTransform Scale(double x, double y)
         {
             this._xScaleFactor = x;
@@ -106,7 +112,7 @@ namespace Odd.Svg.SvgHelpers
             _attributeStack.Add(@"rotate("+_angle.ToString() + " " + _xCenter.ToString() + " " + _yCenter.ToString() + ")");
             return this;
         }
-        public SvgTransform Matrix(double a, double b,double c,double d,double e,double f)
+        public SvgTransform Matrix(double a, double b, double c, double d, double e, double f)
         {
             this._matrix[0] = a;
             this._matrix[1] = b;
@@ -116,6 +122,68 @@ namespace Odd.Svg.SvgHelpers
             this._matrix[5] = f;
             if (this == null) throw new Exception("Method SvgTransform.Matrix resulted in a null value.");
             _attributeStack.Add(@"matrix(" + _matrix[0].ToString() + _matrix[1].ToString() + _matrix[2].ToString() + _matrix[3].ToString() + _matrix[4].ToString() + _matrix[5].ToString() + ") ");
+            return this;
+        }
+
+        public SvgTransform Scale(string x)
+        {
+            this._xScaleFactor_s = x;
+            if (this == null) throw new Exception("Method SvgTransform.Scale (proportinal) resulted in a null value.");
+            _attributeStack.Add(@"scale(" + _xScaleFactor_s + ")");
+            return this;
+        }
+        public SvgTransform Scale(string x, string y)
+        {
+            this._xScaleFactor_s = x;
+            this._yScaleFactor_s = y;
+            if (this == null) throw new Exception("Method SvgTransform.Scale (non proportional) resulted in a null value.");
+            _attributeStack.Add(@"scale(" + _xScaleFactor_s + " " + _yScaleFactor_s + ")");
+            return this;
+        }
+        public SvgTransform Translate(string x, string y)
+        {
+            this._xTranslate_s = x;
+            this._yTranslate_s = y;
+            if (this == null) throw new Exception("Method SvgTransform.Translate resulted in a null value.");
+            _attributeStack.Add(@"translate(" + _xTranslate_s + " " + _yTranslate_s + ")");
+            return this;
+        }
+        public SvgTransform SkewX(string x)
+        {
+            this._xSkewAngle_s = x;
+            if (this == null) throw new Exception("Method SvgTransform.SkewX resulted in a null value.");
+            _attributeStack.Add(@"skewX(" + _xSkewAngle_s + ")");
+            return this;
+        }
+        public SvgTransform SkewY(string y)
+        {
+            this._ySkewAngle_s = y;
+            if (this == null) throw new Exception("Method SvgTransform.SkewY resulted in a null value.");
+            _attributeStack.Add(@"skewY(" + _ySkewAngle_s + ")");
+            return this;
+        }
+        public SvgTransform Shear(string x, string y)
+        {
+            this._xShearFactor_s = x;
+            this._yShearFactor_s = y;
+            if (this == null) throw new Exception("Method SvgTransform.Shear resulted in a null value.");
+            _attributeStack.Add(@"shear(" + _xShearFactor_s + " " + _yShearFactor_s + ")");
+            return this;
+        }
+        public SvgTransform Rotate(string a)
+        {
+            this._angle_s = a;
+            if (this == null) throw new Exception("Method SvgTransform.Rotate (default centers) resulted in a null value.");
+            _attributeStack.Add(@"rotate(" + _angle_s + ")");
+            return this;
+        }
+        public SvgTransform Rotate(string a, string x, string y)
+        {
+            this._xCenter_s = x;
+            this._yCenter_s = y;
+            this._angle_s = a;
+            if (this == null) throw new Exception("Method SvgTransform.Rotate (defined centers) resulted in a null value.");
+            _attributeStack.Add(@"rotate(" + _angle_s + " " + _xCenter_s + " " + _yCenter_s + ")");
             return this;
         }
 

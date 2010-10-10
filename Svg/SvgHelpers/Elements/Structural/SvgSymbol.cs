@@ -19,45 +19,39 @@ namespace Odd.Svg.SvgHelpers
 
         public BeginSvgSymbol Id(string id)
         {
-            base._id = id;
             if (this == null) throw new Exception("Method BeginSvgSymbol.Id resulted in a null value.");
-            _attributeStack.Add(@"id=""" + _id + @"""");
+            _attributeStack.Add(@"id=""" + id + @"""");
             return this;
         }
         public BeginSvgSymbol XmlBase(string xmlBase)
         {
-            this._xmlBase = xmlBase;
             if (this == null) throw new Exception("Method BeginSvgSymbol.XmlBase resulted in a null value.");
-            _attributeStack.Add(@"xml:base=""" + _xmlBase + @"""");
+            _attributeStack.Add(@"xml:base=""" + xmlBase + @"""");
             return this;
         }
         public BeginSvgSymbol XmlLang(string xmlLang)
         {
-            this._xmlLang = xmlLang;
             if (this == null) throw new Exception("Method BeginSvgSymbol.XmlLang resulted in a null value.");
-            _attributeStack.Add(@"xml:lang=""" + _xmlLang + @"""");
+            _attributeStack.Add(@"xml:lang=""" + xmlLang + @"""");
             return this;
         }
         public BeginSvgSymbol XmlSpace(string xmlSpace)
         {
-            this._xmlSpace = xmlSpace;
             if (this == null) throw new Exception("Method BeginSvgSymbol.XmlSpace resulted in a null value.");
-            _attributeStack.Add(@"xml:space=""" + _xmlSpace + @"""");
+            _attributeStack.Add(@"xml:space=""" + xmlSpace + @"""");
             return this;
         }
 
         public BeginSvgSymbol CssClass(string cssClass)
         {
-            this._cssClass = cssClass;
             if (this == null) throw new Exception("Method BeginSvgSymbol.CssClass resulted in a null value.");
-            _attributeStack.Add(@"class=""" + _cssClass.ToString() + @"""");
+            _attributeStack.Add(@"class=""" + cssClass + @"""");
             return this;
         }
         public BeginSvgSymbol Style(string style)
         {
-            this._style = style;
             if (this == null) throw new Exception("Method BeginSvgSymbol.Style resulted in a null value.");
-            _attributeStack.Add(@"style=""" + _style.ToString() + @"""");
+            _attributeStack.Add(@"style=""" + style + @"""");
             return this;
         }
         public BeginSvgSymbol Style(SvgStyle style)
@@ -67,18 +61,18 @@ namespace Odd.Svg.SvgHelpers
             return this;
         }
 
-        public BeginSvgSymbol PreserveAspectRatio(string preserveAspectRatio)
-        {
-            this._preserveAspectRatio = preserveAspectRatio;
-            if (this == null) throw new Exception("Method BeginSvgSymbol.PreserveAspectRatio resulted in a null value.");
-            return this;
-        }
-        public BeginSvgSymbol ViewBox(string viewBox)
-        {
-            this._viewBox = viewBox;
-            if (this == null) throw new Exception("Method BeginSvgSymbol.ViewBox resulted in a null value.");
-            return this;
-        }
+        //public BeginSvgSymbol PreserveAspectRatio(string preserveAspectRatio)
+        //{
+        //    this._preserveAspectRatio = preserveAspectRatio;
+        //    if (this == null) throw new Exception("Method BeginSvgSymbol.PreserveAspectRatio resulted in a null value.");
+        //    return this;
+        //}
+        //public BeginSvgSymbol ViewBox(string viewBox)
+        //{
+        //    this._viewBox = viewBox;
+        //    if (this == null) throw new Exception("Method BeginSvgSymbol.ViewBox resulted in a null value.");
+        //    return this;
+        //}
 
         public BeginSvgSymbol Presentation(SvgPresentation presentation)
         {

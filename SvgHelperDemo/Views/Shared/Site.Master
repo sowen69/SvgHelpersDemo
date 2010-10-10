@@ -22,11 +22,11 @@
             <div id="menucontainer">
             
                 <ul id="menu">              
-                    <li><%: Html.ActionLink("Home", "Index", "Home")%></li>
-                    <li><%: Html.ActionLink("Basic Shapes", "BasicShapes","Home") %></li>
-                    <li><%: Html.ActionLink("Gradients", "Gradients","Home") %></li>
-                    <li><%: Html.ActionLink("Other Stuff", "OtherStuff","Home") %></li>
-                    <li><%: Html.ActionLink("About", "About", "Home")%></li>
+                    <li><%= Html.ActionLink("Home", "Index", "Home")%></li>
+                    <li><%= Html.ActionLink("Basic Shapes", "BasicShapes","Home") %></li>
+                    <li><%= Html.ActionLink("Gradients", "Gradients","Home") %></li>
+                    <li><%= Html.ActionLink("Other Stuff", "OtherStuff","Home") %></li>
+                    <li><%= Html.ActionLink("About", "About", "Home")%></li>
                 </ul>
             
             </div>

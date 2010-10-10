@@ -19,45 +19,39 @@ namespace Odd.Svg.SvgHelpers
         }
         public SvgEllipse Id(string id)
         {
-            base._id = id;
             if (this == null) throw new Exception("Method SvgEllipse.Id resulted in a null value.");
-            _attributeStack.Add(@"id=""" + _id + @"""");
+            _attributeStack.Add(@"id=""" + id + @"""");
             return this;
         }
         public SvgEllipse XmlBase(string xmlBase)
         {
-            this._xmlBase = xmlBase;
             if (this == null) throw new Exception("Method SvgEllipse.XmlBase resulted in a null value.");
-            _attributeStack.Add(@"xml:base=""" + _xmlBase + @"""");
+            _attributeStack.Add(@"xml:base=""" + xmlBase + @"""");
             return this;
         }
         public SvgEllipse XmlLang(string xmlLang)
         {
-            this._xmlLang = xmlLang;
             if (this == null) throw new Exception("Method SvgEllipse.XmlLang resulted in a null value.");
-            _attributeStack.Add(@"xml:lang=""" + _xmlLang + @"""");
+            _attributeStack.Add(@"xml:lang=""" + xmlLang + @"""");
             return this;
         }
         public SvgEllipse XmlSpace(string xmlSpace)
         {
-            this._xmlSpace = xmlSpace;
             if (this == null) throw new Exception("Method SvgEllipse.XmlSpace resulted in a null value.");
-            _attributeStack.Add(@"xml:space=""" + _xmlSpace + @"""");
+            _attributeStack.Add(@"xml:space=""" + xmlSpace + @"""");
             return this;
         }
 
         public SvgEllipse CssClass(string cssClass)
         {
-            this._cssClass = cssClass;
             if (this == null) throw new Exception("Method SvgEllipse.CssClass resulted in a null value.");
-            _attributeStack.Add(@"class=""" + _cssClass + @"""");
+            _attributeStack.Add(@"class=""" + cssClass + @"""");
             return this;
         }
         public SvgEllipse Style(string style)
         {
-            this._style = style;
             if (this == null) throw new Exception("Method SvgEllipse.Style resulted in a null value.");
-            _attributeStack.Add(@"style=""" + _style + @"""");
+            _attributeStack.Add(@"style=""" + style + @"""");
             return this;
         }
         public SvgEllipse Style(SvgStyle style)
@@ -66,34 +60,54 @@ namespace Odd.Svg.SvgHelpers
             if (this == null) throw new Exception("Method SvgEllipse.Style resulted in a null value.");
             return this;
         }
-        
 
         public SvgEllipse CX(double cx)
         {
-            this._cx = cx;
             if (this == null) throw new Exception("Method SvgEllipse.CX resulted in a null value.");
-            _attributeStack.Add(@"cx=""" + _cx + @"""");
+            _attributeStack.Add(@"cx=""" + cx + @"""");
             return this;
         }
         public SvgEllipse CY(double cy)
         {
-            this._cy = cy;
             if (this == null) throw new Exception("Method SvgEllipse.CY resulted in a null value.");
-            _attributeStack.Add(@"cy=""" + _cy + @"""");
+            _attributeStack.Add(@"cy=""" + cy + @"""");
             return this;
         }
         public SvgEllipse RX(double rx)
         {
-            this._rx = rx;
             if (this == null) throw new Exception("Method SvgEllipse.RX resulted in a null value.");
-            _attributeStack.Add(@"rx=""" + _rx + @"""");
+            _attributeStack.Add(@"rx=""" + rx + @"""");
             return this;
         }
         public SvgEllipse RY(double ry)
         {
-            this._ry = ry;
             if (this == null) throw new Exception("Method SvgEllipse.RY resulted in a null value.");
-            _attributeStack.Add(@"ry=""" + _ry + @"""");
+            _attributeStack.Add(@"ry=""" + ry + @"""");
+            return this;
+        }
+
+        public SvgEllipse CX(string cx)
+        {
+            if (this == null) throw new Exception("Method SvgEllipse.CX(string) resulted in a null value.");
+            _attributeStack.Add(@"cx=""" + cx + @"""");
+            return this;
+        }
+        public SvgEllipse CY(string cy)
+        {
+            if (this == null) throw new Exception("Method SvgEllipse.CY(string) resulted in a null value.");
+            _attributeStack.Add(@"cy=""" + cy + @"""");
+            return this;
+        }
+        public SvgEllipse RX(string rx)
+        {
+            if (this == null) throw new Exception("Method SvgEllipse.RX(string) resulted in a null value.");
+            _attributeStack.Add(@"rx=""" + rx + @"""");
+            return this;
+        }
+        public SvgEllipse RY(string ry)
+        {
+            if (this == null) throw new Exception("Method SvgEllipse.RY(string) resulted in a null value.");
+            _attributeStack.Add(@"ry=""" + ry + @"""");
             return this;
         }
 

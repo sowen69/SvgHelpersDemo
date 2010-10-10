@@ -21,45 +21,39 @@ namespace Odd.Svg.SvgHelpers
 
         public SvgGradientStop Id(string id)
         {
-            base._id = id;
             if (this == null) throw new Exception("Method SvgGradientStop.Id resulted in a null value.");
-            _attributeStack.Add(@"id=""" + _id + @"""");
+            _attributeStack.Add(@"id=""" + id + @"""");
             return this;
         }
         public SvgGradientStop XmlBase(string xmlBase)
         {
-            this._xmlBase = xmlBase;
             if (this == null) throw new Exception("Method SvgGradientStop.XmlBase resulted in a null value.");
-            _attributeStack.Add(@"xml:base=""" + _xmlBase + @"""");
+            _attributeStack.Add(@"xml:base=""" + xmlBase + @"""");
             return this;
         }
         public SvgGradientStop XmlLang(string xmlLang)
         {
-            this._xmlLang = xmlLang;
             if (this == null) throw new Exception("Method SvgGradientStop.XmlLang resulted in a null value.");
-            _attributeStack.Add(@"xml:lang=""" + _xmlLang + @"""");
+            _attributeStack.Add(@"xml:lang=""" + xmlLang + @"""");
             return this;
         }
         public SvgGradientStop XmlSpace(string xmlSpace)
         {
-            this._xmlSpace = xmlSpace;
             if (this == null) throw new Exception("Method SvgGradientStop.XmlSpace resulted in a null value.");
-            _attributeStack.Add(@"xml:space=""" + _xmlSpace + @"""");
+            _attributeStack.Add(@"xml:space=""" + xmlSpace + @"""");
             return this;
         }
 
         public SvgGradientStop CssClass(string cssClass)
         {
-            this._cssClass = cssClass;
             if (this == null) throw new Exception("Method SvgGradientStop.CssClass resulted in a null value.");
-            _attributeStack.Add(@"class=""" + _cssClass + @"""");
+            _attributeStack.Add(@"class=""" + cssClass + @"""");
             return this;
         }
         public SvgGradientStop Style(string style)
         {
-            this._style = style;
             if (this == null) throw new Exception("Method SvgGradientStop.Style resulted in a null value.");
-            _attributeStack.Add(@"style=""" + _style + @"""");
+            _attributeStack.Add(@"style=""" + style + @"""");
             return this;
         }
         public SvgGradientStop Style(SvgStyle style)
@@ -71,9 +65,8 @@ namespace Odd.Svg.SvgHelpers
 
         public SvgGradientStop Offset(string offset)
         {
-            this._offset = offset;
             if (this == null) throw new Exception("Method SvgGradientStop.Offset resulted in a null value.");
-            _attributeStack.Add(@"offset=""" + _offset + @"""");
+            _attributeStack.Add(@"offset=""" + offset + @"""");
             return this;
         }
 

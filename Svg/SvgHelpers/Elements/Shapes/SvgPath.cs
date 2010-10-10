@@ -20,45 +20,39 @@ namespace Odd.Svg.SvgHelpers
 
         public SvgPath Id(string id)
         {
-            base._id = id;
             if (this == null) throw new Exception("Method SvgPath.Id resulted in a null value.");
-            _attributeStack.Add(@"id=""" + _id + @"""");
+            _attributeStack.Add(@"id=""" + id + @"""");
             return this;
         }
         public SvgPath XmlBase(string xmlBase)
         {
-            this._xmlBase = xmlBase;
             if (this == null) throw new Exception("Method SvgPath.XmlBase resulted in a null value.");
-            _attributeStack.Add(@"xml:base=""" + _xmlBase + @"""");
+            _attributeStack.Add(@"xml:base=""" + xmlBase + @"""");
             return this;
         }
         public SvgPath XmlLang(string xmlLang)
         {
-            this._xmlLang = xmlLang;
             if (this == null) throw new Exception("Method SvgPath.XmlLang resulted in a null value.");
-            _attributeStack.Add(@"xml:lang=""" + _xmlLang + @"""");
+            _attributeStack.Add(@"xml:lang=""" + xmlLang + @"""");
             return this;
         }
         public SvgPath XmlSpace(string xmlSpace)
         {
-            this._xmlSpace = xmlSpace;
             if (this == null) throw new Exception("Method SvgPath.XmlSpace resulted in a null value.");
-            _attributeStack.Add(@"xml:space=""" + _xmlSpace + @"""");
+            _attributeStack.Add(@"xml:space=""" + xmlSpace + @"""");
             return this;
         }
 
         public SvgPath CssClass(string cssClass)
         {
-            this._cssClass = cssClass;
             if (this == null) throw new Exception("Method SvgPath.CssClass resulted in a null value.");
-            _attributeStack.Add(@"class=""" + _cssClass + @"""");
+            _attributeStack.Add(@"class=""" + cssClass + @"""");
             return this;
         }
         public SvgPath Style(string style)
         {
-            this._style = style;
             if (this == null) throw new Exception("Method SvgPath.Style resulted in a null value.");
-            _attributeStack.Add(@"style=""" + _style + @"""");
+            _attributeStack.Add(@"style=""" + style + @"""");
             return this;
         }
         public SvgPath Style(SvgStyle style)
@@ -70,16 +64,21 @@ namespace Odd.Svg.SvgHelpers
         
         public SvgPath D(string d)
         {
-            this._d = d;
             if (this == null) throw new Exception("Method SvgPath.D resulted in a null value.");
-            _attributeStack.Add(@"d=""" + _d + @"""");
+            _attributeStack.Add(@"d=""" + d + @"""");
             return this;
         }
         public SvgPath PathLength(double pathLength)
         {
-            this._pathLength = pathLength;
             if (this == null) throw new Exception("Method SvgPath.PathLength resulted in a null value.");
-            _attributeStack.Add(@"pathlength=""" + _pathLength.ToString() + @"""");
+            _attributeStack.Add(@"pathlength=""" + pathLength.ToString() + @"""");
+            return this;
+        }
+
+        public SvgPath PathLength(string pathLength)
+        {
+            if (this == null) throw new Exception("Method SvgPath.PathLength(string) resulted in a null value.");
+            _attributeStack.Add(@"pathlength=""" + pathLength + @"""");
             return this;
         }
 

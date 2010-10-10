@@ -15,50 +15,43 @@ namespace Odd.Svg.SvgHelpers
             _events = new List<SvgEvent>();
             _styles = new List<SvgStyle>();
             _hasChildNode = true;
-
         }
 
         public SvgText Id(string id)
         {
-            base._id = id;
             if (this == null) throw new Exception("Method SvgText.Id resulted in a null value.");
-            _attributeStack.Add(@"id=""" + _id + @"""");
+            _attributeStack.Add(@"id=""" + id + @"""");
             return this;
         }
         public SvgText XmlBase(string xmlBase)
         {
-            this._xmlBase = xmlBase;
             if (this == null) throw new Exception("Method SvgText.XmlBase resulted in a null value.");
-            _attributeStack.Add(@"xml:base=""" + _xmlBase + @"""");
+            _attributeStack.Add(@"xml:base=""" + xmlBase + @"""");
             return this;
         }
         public SvgText XmlLang(string xmlLang)
         {
-            this._xmlLang = xmlLang;
             if (this == null) throw new Exception("Method SvgText.XmlLang resulted in a null value.");
-            _attributeStack.Add(@"xml:lang=""" + _xmlLang + @"""");
+            _attributeStack.Add(@"xml:lang=""" + xmlLang + @"""");
             return this;
         }
         public SvgText XmlSpace(string xmlSpace)
         {
-            this._xmlSpace = xmlSpace;
             if (this == null) throw new Exception("Method SvgText.XmlSpace resulted in a null value.");
-            _attributeStack.Add(@"xml:space=""" + _xmlSpace + @"""");
+            _attributeStack.Add(@"xml:space=""" + xmlSpace + @"""");
             return this;
         }
 
         public SvgText CssClass(string cssClass)
         {
-            this._cssClass = cssClass;
             if (this == null) throw new Exception("Method SvgText.CssClass resulted in a null value.");
-            _attributeStack.Add(@"class=""" + _cssClass + @"""");
+            _attributeStack.Add(@"class=""" + cssClass + @"""");
             return this;
         }
         public SvgText Style(string style)
         {
-            this._style = style;
             if (this == null) throw new Exception("Method SvgText.Style resulted in a null value.");
-            _attributeStack.Add(@"style=""" + _style + @"""");
+            _attributeStack.Add(@"style=""" + style + @"""");
             return this;
         }
         public SvgText Style(SvgStyle style)
@@ -70,51 +63,75 @@ namespace Odd.Svg.SvgHelpers
 
         public SvgText X(double x)
         {
-            this._x = x;
             if (this == null) throw new Exception("Method SvgText.X resulted in a null value.");
-            _attributeStack.Add(@"x=""" + _x + @"""");
+            _attributeStack.Add(@"x=""" + x + @"""");
             return this;
         }
         public SvgText Y(double y)
         {
-            this._y = y;
             if (this == null) throw new Exception("Method SvgText.Y resulted in a null value.");
-            _attributeStack.Add(@"y=""" + _y + @"""");
+            _attributeStack.Add(@"y=""" + y + @"""");
             return this;
         }        
         public SvgText DX(double dx)
         {
-            this._dx = dx;
             if (this == null) throw new Exception("Method SvgText.DX resulted in a null value.");
-            _attributeStack.Add(@"dx=""" + _dx + @"""");
+            _attributeStack.Add(@"dx=""" + dx + @"""");
             return this;
         }        
         public SvgText DY(double dy)
         {
-            this._dy = dy;
             if (this == null) throw new Exception("Method SvgText.DY resulted in a null value.");
-            _attributeStack.Add(@"dy=""" + _dy + @"""");
+            _attributeStack.Add(@"dy=""" + dy + @"""");
             return this;
         }       
         public SvgText Rotate(double rotate)
         {
-            this._rotate = rotate;
             if (this == null) throw new Exception("Method SvgText.Rotate resulted in a null value.");
-            _attributeStack.Add(@"rotate=""" + _rotate + @"""");
+            _attributeStack.Add(@"rotate=""" + rotate + @"""");
             return this;
         }        
         public SvgText TextLength(string textLength)
         {
-            this._textLength = textLength;
             if (this == null) throw new Exception("Method SvgText.TextLength resulted in a null value.");
-            _attributeStack.Add(@"textLength=""" + _textLength + @"""");
+            _attributeStack.Add(@"textLength=""" + textLength + @"""");
             return this;
         }        
         public SvgText LengthAdjust(string lengthAdjust)
         {
-            this._lengthAdjust = lengthAdjust;
             if (this == null) throw new Exception("Method SvgText.LengthAdjust resulted in a null value.");
-            _attributeStack.Add(@"lengthAdjust=""" + _lengthAdjust + @"""");
+            _attributeStack.Add(@"lengthAdjust=""" + lengthAdjust + @"""");
+            return this;
+        }
+
+        public SvgText X(string x)
+        {
+            if (this == null) throw new Exception("Method SvgText.X resulted in a null value.");
+            _attributeStack.Add(@"x=""" + x + @"""");
+            return this;
+        }
+        public SvgText Y(string y)
+        {
+            if (this == null) throw new Exception("Method SvgText.Y resulted in a null value.");
+            _attributeStack.Add(@"y=""" + y + @"""");
+            return this;
+        }
+        public SvgText DX(string dx)
+        {
+            if (this == null) throw new Exception("Method SvgText.DX resulted in a null value.");
+            _attributeStack.Add(@"dx=""" + dx + @"""");
+            return this;
+        }
+        public SvgText DY(string dy)
+        {
+            if (this == null) throw new Exception("Method SvgText.DY resulted in a null value.");
+            _attributeStack.Add(@"dy=""" + dy + @"""");
+            return this;
+        }
+        public SvgText Rotate(string rotate)
+        {
+            if (this == null) throw new Exception("Method SvgText.Rotate resulted in a null value.");
+            _attributeStack.Add(@"rotate=""" + rotate + @"""");
             return this;
         }
 

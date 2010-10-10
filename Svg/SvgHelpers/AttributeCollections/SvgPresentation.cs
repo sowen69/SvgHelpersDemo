@@ -1038,6 +1038,5 @@ namespace Odd.Svg.SvgHelpers
 
             return tag.ToString();
         }
-
     }
 }

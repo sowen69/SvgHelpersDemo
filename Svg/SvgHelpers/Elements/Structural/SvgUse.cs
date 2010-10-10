@@ -18,45 +18,39 @@ namespace Odd.Svg.SvgHelpers
 
         public SvgUse Id(string id)
         {
-            base._id = id;
             if (this == null) throw new Exception("Method SvgUse.Id resulted in a null value.");
-            _attributeStack.Add(@"id=""" + _id + @"""");
+            _attributeStack.Add(@"id=""" + id + @"""");
             return this;
         }
         public SvgUse XmlBase(string xmlBase)
         {
-            this._xmlBase = xmlBase;
             if (this == null) throw new Exception("Method SvgUse.XmlBase resulted in a null value.");
-            _attributeStack.Add(@"xml:base=""" + _xmlBase + @"""");
+            _attributeStack.Add(@"xml:base=""" + xmlBase + @"""");
             return this;
         }
         public SvgUse XmlLang(string xmlLang)
         {
-            this._xmlLang = xmlLang;
             if (this == null) throw new Exception("Method SvgUse.XmlLang resulted in a null value.");
-            _attributeStack.Add(@"xml:lang=""" + _xmlLang + @"""");
+            _attributeStack.Add(@"xml:lang=""" + xmlLang + @"""");
             return this;
         }
         public SvgUse XmlSpace(string xmlSpace)
         {
-            this._xmlSpace = xmlSpace;
             if (this == null) throw new Exception("Method SvgUse.XmlSpace resulted in a null value.");
-            _attributeStack.Add(@"xml:space=""" + _xmlSpace + @"""");
+            _attributeStack.Add(@"xml:space=""" + xmlSpace + @"""");
             return this;
         }
 
         public SvgUse CssClass(string cssClass)
         {
-            this._cssClass = cssClass;
             if (this == null) throw new Exception("Method SvgUse.CssClass resulted in a null value.");
-            _attributeStack.Add(@"class=""" + _cssClass.ToString() + @"""");
+            _attributeStack.Add(@"class=""" + cssClass + @"""");
             return this;
         }
         public SvgUse Style(string style)
         {
-            this._style = style;
             if (this == null) throw new Exception("Method SvgUse.Style resulted in a null value.");
-            _attributeStack.Add(@"style=""" + _style.ToString() + @"""");
+            _attributeStack.Add(@"style=""" + style.ToString() + @"""");
             return this;
         }
         public SvgUse Style(SvgStyle style)
@@ -68,38 +62,58 @@ namespace Odd.Svg.SvgHelpers
 
         public SvgUse X(double x)
         {
-            this._x = x;
             if (this == null) throw new Exception("Method SvgUse.X resulted in a null value.");
-            _attributeStack.Add(@"x=""" + _x.ToString() + @"""");
+            _attributeStack.Add(@"x=""" + x.ToString() + @"""");
             return this;
         }
         public SvgUse Y(double y)
         {
-            this._y = y;
             if (this == null) throw new Exception("Method SvgUse.Y resulted in a null value.");
-            _attributeStack.Add(@"y=""" + _y.ToString() + @"""");
+            _attributeStack.Add(@"y=""" + y.ToString() + @"""");
             return this;
         }
         public SvgUse Height(double height)
         {
-            this._height = height;
             if (this == null) throw new Exception("Method SvgUse.Height resulted in a null value.");
-            _attributeStack.Add(@"height=""" + _height.ToString() + @"""");
+            _attributeStack.Add(@"height=""" + height.ToString() + @"""");
             return this;
         }
         public SvgUse Width(double width)
         {
-            this._width = width;
             if (this == null) throw new Exception("Method SvgUse.Width resulted in a null value.");
-            _attributeStack.Add(@"width=""" + _width.ToString() + @"""");
+            _attributeStack.Add(@"width=""" + width.ToString() + @"""");
+            return this;
+        }
+
+        public SvgUse X(string x)
+        {
+            if (this == null) throw new Exception("Method SvgUse.X resulted in a null value.");
+            _attributeStack.Add(@"x=""" + x + @"""");
+            return this;
+        }
+        public SvgUse Y(string y)
+        {
+            if (this == null) throw new Exception("Method SvgUse.Y resulted in a null value.");
+            _attributeStack.Add(@"y=""" + y + @"""");
+            return this;
+        }
+        public SvgUse Height(string height)
+        {
+            if (this == null) throw new Exception("Method SvgUse.Height resulted in a null value.");
+            _attributeStack.Add(@"height=""" + height + @"""");
+            return this;
+        }
+        public SvgUse Width(string width)
+        {
+            if (this == null) throw new Exception("Method SvgUse.Width resulted in a null value.");
+            _attributeStack.Add(@"width=""" + width + @"""");
             return this;
         }
         
         public SvgUse XlinkHref(string xlink_href)
         {
-            this._xlink_href = xlink_href;
             if (this == null) throw new Exception("Method SvgUse.XlinkHref resulted in a null value.");
-            _attributeStack.Add(@"xlink:href=""" + _xlink_href + @"""");
+            _attributeStack.Add(@"xlink:href=""" + xlink_href + @"""");
             return this;
         }
         public SvgUse Presentation(SvgPresentation presentation)
