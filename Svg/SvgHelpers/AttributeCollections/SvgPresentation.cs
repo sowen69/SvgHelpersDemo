@@ -5,6 +5,9 @@ using System.Text;
 
 namespace Odd.Svg.SvgHelpers
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class SvgPresentation : IHideObjectMembers
     {
         #region AttributeBase fields
@@ -72,6 +75,9 @@ namespace Odd.Svg.SvgHelpers
         IList<string> _attributeStack;
         #endregion
 
+        /// <summary>
+        /// 
+        /// </summary>
         public SvgPresentation()
         {
             _attributeStack = new List<string>();
@@ -459,7 +465,7 @@ namespace Odd.Svg.SvgHelpers
         /// <para>This property allows authors to specify an aspect value for an element that </para>
         /// <para>will preserve the x-height of the first choice font in a substitute font.</para>
         /// </summary>
-        /// <param name="font_size_adjust"><number> | none | inherit</param>
+        /// <param name="font_size_adjust">[number] | none | inherit</param>
         /// <returns></returns>
         public SvgPresentation FontSizeAdjust(string font_size_adjust)
         {
@@ -996,7 +1002,8 @@ namespace Odd.Svg.SvgHelpers
 
         /// <WritingMode />
         /// <summary>
-        /// The ‘writing-mode’ property specifies whether the initial inline-progression-direction for a </para><para>‘text’ element shall be left-to-right, right-to-left, or top-to-bottom. 
+        /// <para>The ‘writing-mode’ property specifies whether the initial inline-progression-direction for a </para>
+        /// <para>‘text’ element shall be left-to-right, right-to-left, or top-to-bottom. </para>
         /// </summary>
         /// <param name="writing_mode">lr-tb | rl-tb | tb-rl | lr | rl | tb | inherit</param>
         /// <returns></returns>
@@ -1008,7 +1015,7 @@ namespace Odd.Svg.SvgHelpers
             return this;
         }
 
-
+        /// <AddAttribute />
         /// <summary>
         /// Add any attribute to the chain using a key:value pair.
         /// </summary>
@@ -1024,6 +1031,12 @@ namespace Odd.Svg.SvgHelpers
             return this;
         }
 
+        /// <summary>
+        /// Returns a <see cref="System.String"/> that represents this instance.
+        /// </summary>
+        /// <returns>
+        /// A <see cref="System.String"/> that represents this instance.
+        /// </returns>
         public override string ToString()
         {
             StringBuilder tag = new StringBuilder();

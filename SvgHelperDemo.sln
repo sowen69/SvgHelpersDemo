@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SvgHelperDemo", "SvgHelperDemo\SvgHelperDemo.csproj", "{39A9CCE1-6D56-4FF4-905C-6A3C98E05FFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SvgHelperDemo.Tests", "SvgHelperDemo.Tests\SvgHelperDemo.Tests.csproj", "{55A91068-EAC5-49A8-9B6C-3E54CA527546}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odd.Svg", "Svg\Odd.Svg.csproj", "{4F1C16F6-F1DE-4467-8008-62C6F208EC9C}"
 EndProject
 Global
@@ -17,10 +15,6 @@ Global
 		{39A9CCE1-6D56-4FF4-905C-6A3C98E05FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39A9CCE1-6D56-4FF4-905C-6A3C98E05FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39A9CCE1-6D56-4FF4-905C-6A3C98E05FFF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{55A91068-EAC5-49A8-9B6C-3E54CA527546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{55A91068-EAC5-49A8-9B6C-3E54CA527546}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{55A91068-EAC5-49A8-9B6C-3E54CA527546}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{55A91068-EAC5-49A8-9B6C-3E54CA527546}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4F1C16F6-F1DE-4467-8008-62C6F208EC9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4F1C16F6-F1DE-4467-8008-62C6F208EC9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F1C16F6-F1DE-4467-8008-62C6F208EC9C}.Release|Any CPU.ActiveCfg = Release|Any CPU

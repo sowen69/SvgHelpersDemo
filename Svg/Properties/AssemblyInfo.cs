@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Svg")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Fluent SvgHelpers")]
+[assembly: AssemblyDescription("To create SVG output")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Svg")]
+[assembly: AssemblyCompany("Odd:")]
+[assembly: AssemblyProduct("Fluent SvgHelpers")]
 [assembly: AssemblyCopyright("Copyright ©  2010")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

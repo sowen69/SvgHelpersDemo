@@ -5,3 +5,4 @@ C:\Users\Simon\Documents\My Dropbox\VS Projects\SvgHelperDemo\SvgHelperDemo\bin\
 C:\Users\Simon\Documents\My Dropbox\VS Projects\SvgHelperDemo\SvgHelperDemo\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Simon\Documents\My Dropbox\VS Projects\SvgHelperDemo\SvgHelperDemo\obj\Debug\SvgHelperDemo.dll
 C:\Users\Simon\Documents\My Dropbox\VS Projects\SvgHelperDemo\SvgHelperDemo\obj\Debug\SvgHelperDemo.pdb
+C:\Users\Simon\Documents\My Dropbox\VS Projects\SvgHelperDemo\SvgHelperDemo\bin\Odd.Svg.xml

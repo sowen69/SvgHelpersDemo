@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Odd.Svg.SvgHelpers
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public abstract class SvgElementBase : IHideObjectMembers
     {
         #region ElementBase fields
@@ -53,6 +56,12 @@ namespace Odd.Svg.SvgHelpers
             return this;
         }
 
+        /// <summary>
+        /// Returns a <see cref="System.String"/> that represents this instance.
+        /// </summary>
+        /// <returns>
+        /// A <see cref="System.String"/> that represents this instance.
+        /// </returns>
         public override string ToString()
         {
             StringBuilder tag = new StringBuilder("<");

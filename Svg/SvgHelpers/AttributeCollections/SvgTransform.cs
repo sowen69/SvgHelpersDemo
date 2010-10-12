@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Odd.Svg.SvgHelpers
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class SvgTransform : IHideObjectMembers
     {
         #region Transform Fields
@@ -187,6 +190,12 @@ namespace Odd.Svg.SvgHelpers
             return this;
         }
 
+        /// <summary>
+        /// Returns a <see cref="System.String"/> that represents this instance.
+        /// </summary>
+        /// <returns>
+        /// A <see cref="System.String"/> that represents this instance.
+        /// </returns>
         public override string ToString()
         {
             StringBuilder transformAttributes = new StringBuilder(@"transform=""");
