@@ -11,8 +11,6 @@ namespace SvgHelperDemo.Controllers
     {
         public ActionResult Index()
         {
-            ViewData["Message"] = "MVC2 HtmlHelpers for SVG Graphics";
-
             return View();
         }
 
@@ -20,7 +18,10 @@ namespace SvgHelperDemo.Controllers
         {
             return View();
         }
-
+        public ActionResult Structural()
+        {
+            return View();
+        }
         public ActionResult BasicShapes()
         {
             return View();
@@ -30,6 +31,10 @@ namespace SvgHelperDemo.Controllers
             return View();
         }
         public ActionResult OtherStuff()
+        {
+            return View();
+        }
+        public ActionResult Download()
         {
             return View();
         }

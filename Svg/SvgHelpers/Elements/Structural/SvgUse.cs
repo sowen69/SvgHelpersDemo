@@ -5,7 +5,7 @@ using System;
 namespace Odd.Svg.SvgHelpers
 {
     /// <summary>
-    /// 
+    /// Opens a Use tag.
     /// </summary>
     public class SvgUse: SvgElementBase
     {
@@ -250,7 +250,7 @@ namespace Odd.Svg.SvgHelpers
     }
 
     /// <summary>
-    /// Use end tag
+    /// Closes a Use tag.
     /// </summary>
     public class EndSvgUse
     {

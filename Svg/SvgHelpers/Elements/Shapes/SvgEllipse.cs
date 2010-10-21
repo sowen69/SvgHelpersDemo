@@ -7,7 +7,7 @@ using System.Web.Mvc;
 namespace Odd.Svg.SvgHelpers
 {
     /// <summary>
-    /// 
+    /// Open an Ellipse tag, self closing unless otherwise specified.
     /// </summary>
     public class SvgEllipse : SvgElementBase
     {
@@ -252,7 +252,7 @@ namespace Odd.Svg.SvgHelpers
     }
 
     /// <summary>
-    /// End ellips tag
+    /// Closes an Ellipse tag if not self closing
     /// </summary>
     public class EndSvgEllipse
     {

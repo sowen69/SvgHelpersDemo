@@ -7,7 +7,7 @@ using System.Web.Mvc;
 namespace Odd.Svg.SvgHelpers
 {
     /// <summary>
-    /// 
+    /// Opens an Svg TSpan tag, self closing if not otherwise specified.
     /// </summary>
     public class SvgTSpan : SvgText
     {

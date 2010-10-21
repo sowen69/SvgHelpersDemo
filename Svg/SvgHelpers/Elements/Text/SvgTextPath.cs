@@ -7,7 +7,7 @@ using System.Web.Mvc;
 namespace Odd.Svg.SvgHelpers
 {
     /// <summary>
-    /// 
+    /// Opens an Svg TextPath tag, self closing if not otherwise specified.
     /// </summary>
     public class SvgTextPath : SvgElementBase
     {

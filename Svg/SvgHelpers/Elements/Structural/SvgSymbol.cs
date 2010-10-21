@@ -5,7 +5,7 @@ using System;
 namespace Odd.Svg.SvgHelpers
 {
     /// <summary>
-    /// 
+    /// Opens a Symbol tag
     /// </summary>
     public class BeginSvgSymbol: SvgElementBase
     {
@@ -156,7 +156,7 @@ namespace Odd.Svg.SvgHelpers
     }
 
     /// <summary>
-    /// Symbol end tag
+    /// Closes a Symbol tag.
     /// </summary>
     public class EndSvgSymbol
     {

@@ -5,7 +5,7 @@ using System.Text;
 namespace Odd.Svg.SvgHelpers
 {
     /// <summary>
-    /// 
+    /// Base clase for most of the Svg Elements
     /// </summary>
     public abstract class SvgElementBase : IHideObjectMembers
     {

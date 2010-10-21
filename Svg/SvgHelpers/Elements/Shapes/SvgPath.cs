@@ -7,7 +7,7 @@ using System.Web.Mvc;
 namespace Odd.Svg.SvgHelpers
 {
     /// <summary>
-    /// 
+    /// Open a Path tag, self closing unless otherwise specified.
     /// </summary>
     public class SvgPath : SvgElementBase
     {
@@ -192,7 +192,7 @@ namespace Odd.Svg.SvgHelpers
     }
 
     /// <summary>
-    /// End path tag
+    /// Closes a Path tag if not self closing
     /// </summary>
     public class EndSvgPath
     {

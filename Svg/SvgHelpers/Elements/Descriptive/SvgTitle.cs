@@ -7,8 +7,7 @@ using System.Web.Mvc;
 namespace Odd.Svg.SvgHelpers
 {
     /// <summary>
-    /// <para>Each container element or graphics element in an SVG drawing can supply a ‘title’</para>
-    /// <para>description string where the description is text-only and is not rendered</para>
+    /// <para>Each container element or graphics element in an SVG drawing can supply a ‘title’ description string where the description is text-only and is not rendered</para>
     /// </summary>
     public class SvgTitle
     {

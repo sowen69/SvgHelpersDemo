@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Odd.Svg.SvgHelpers
 {
+    /// <summary>
+    /// Adds jscript event details to the current Svg element
+    /// </summary>
     public class SvgEvent : IHideObjectMembers
     {
         #region Event Fields

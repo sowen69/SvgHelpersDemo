@@ -6,7 +6,7 @@ using System.Text;
 namespace Odd.Svg.SvgHelpers
 {
     /// <summary>
-    /// 
+    /// Adds presentation detail in the form of CSS2.1 to the current Svg element.
     /// </summary>
     public class SvgStyle : IHideObjectMembers
     {

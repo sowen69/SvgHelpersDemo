@@ -8,7 +8,7 @@ using System.Text;
 namespace Odd.Svg.SvgHelpers
 {
     /// <summary>
-    /// 
+    /// Open a Line tag, self closing unless otherwise specified.
     /// </summary>
     public class SvgLine : SvgElementBase
     {
@@ -253,7 +253,7 @@ namespace Odd.Svg.SvgHelpers
     }
 
     /// <summary>
-    /// End line tag
+    /// Closes a Line tag if not self closing
     /// </summary>
     public class EndSvgLine
     {

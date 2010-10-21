@@ -7,7 +7,7 @@ using System.Web.Mvc;
 namespace Odd.Svg.SvgHelpers
 {
     /// <summary>
-    /// 
+    /// Open a Polyline tag, self closing unless otherwise specified.
     /// </summary>
     public class SvgPolyline : SvgElementBase
     {
@@ -168,7 +168,7 @@ namespace Odd.Svg.SvgHelpers
     }
 
     /// <summary>
-    /// End polyline tag
+    /// Closes a Polyline tag if not self closing
     /// </summary>
     public class EndSvgPolyline
     {

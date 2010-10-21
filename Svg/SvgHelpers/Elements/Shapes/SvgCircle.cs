@@ -7,7 +7,7 @@ using System.Web.Mvc;
 namespace Odd.Svg.SvgHelpers
 {
     /// <summary>
-    /// 
+    /// Open a Circle tag, self closing unless otherwise specified.
     /// </summary>
     public class SvgCircle : SvgElementBase
     {
@@ -228,7 +228,7 @@ namespace Odd.Svg.SvgHelpers
     }
 
     /// <summary>
-    /// End circle tag
+    /// Closes a Circle tag if not self closing
     /// </summary>
     public class EndSvgCircle
     {

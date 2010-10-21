@@ -5,7 +5,7 @@ using System;
 namespace Odd.Svg.SvgHelpers
 {
     /// <summary>
-    /// 
+    /// Opens a Group [g] tag.
     /// </summary>
     public class BeginSvgGroup : SvgElementBase
     {
@@ -143,7 +143,7 @@ namespace Odd.Svg.SvgHelpers
     }
 
     /// <summary>
-    /// Group end tag
+    /// Closes a Group (g) tag.
     /// </summary>
     public class EndSvgGroup
     {

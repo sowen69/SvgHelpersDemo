@@ -7,7 +7,7 @@ using System.Web.Mvc;
 namespace Odd.Svg.SvgHelpers
 {
     /// <summary>
-    /// 
+    /// Element for defining the SVG document Metadata
     /// </summary>
     public class BeginSvgMetadata
     {

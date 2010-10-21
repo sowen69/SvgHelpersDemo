@@ -7,7 +7,7 @@ using System.Web.Mvc;
 namespace Odd.Svg.SvgHelpers
 {
     /// <summary>
-    /// 
+    /// Open a Polygon tag, self closing unless otherwise specified.
     /// </summary>
     public class SvgPolygon : SvgElementBase
     {
@@ -168,7 +168,7 @@ namespace Odd.Svg.SvgHelpers
     }
 
     /// <summary>
-    /// End polygon tag
+    /// Closes a Polygon tag if not self closing
     /// </summary>
     public class EndSvgPolygon
     {

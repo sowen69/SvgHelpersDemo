@@ -5,7 +5,7 @@ using System.Text;
 namespace Odd.Svg.SvgHelpers
 {
     /// <summary>
-    /// 
+    /// Adds transform detail to the current Svg element.
     /// </summary>
     public class SvgTransform : IHideObjectMembers
     {

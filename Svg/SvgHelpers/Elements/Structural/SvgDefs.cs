@@ -5,7 +5,7 @@ using System;
 namespace Odd.Svg.SvgHelpers
 {
     /// <summary>
-    /// Deft opening tag.
+    /// Opens a Defs tag.
     /// </summary>
     public class BeginSvgDefs : SvgElementBase
     {
@@ -143,7 +143,7 @@ namespace Odd.Svg.SvgHelpers
     }
 
     /// <summary>
-    /// End Defs tag
+    /// Closes a Defs tag.
     /// </summary>
     public class EndSvgDefs
     {

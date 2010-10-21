@@ -7,7 +7,7 @@ using System.Web.Mvc;
 namespace Odd.Svg.SvgHelpers
 {
     /// <summary>
-    /// 
+    /// Open a Rect tag, self closing unless otherwise specified.
     /// </summary>
     public class SvgRect : SvgElementBase
     {
@@ -300,7 +300,7 @@ namespace Odd.Svg.SvgHelpers
     }
 
     /// <summary>
-    /// End rect tah
+    /// Closes a Rect tag if not self closing
     /// </summary>
     public class EndSvgRect
     {

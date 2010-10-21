@@ -14,6 +14,7 @@
         <%= Html.SvgLine().X1(0).Y1(0).X2(100).Y2(0).Presentation(new SvgPresentation().Stroke("red").StrokeWidth("2px"))%>   
     <%= Html.EndSvgSymbol() %>
     <%= Html.EndSvgDefs() %>
+    
         <% for (int x = 1; x <= 10; x++)
            { %>
         <%= Html.SvgLine().X1(100).Y1(50).X2(200).Y2(50).Transforms(new SvgTransform().Rotate(x*36,150,50)).Presentation(new SvgPresentation().Stroke("black").StrokeWidth("2px"))%>   
